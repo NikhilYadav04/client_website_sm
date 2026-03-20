@@ -1,12 +1,21 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { useNavigate } from 'react-router-dom'
-import doctorImg from '../assets/doctor.png'
+import { Globe, CheckCircle } from 'lucide-react'
+import doctorImg from '../assets/doctor/1.jpg'
 
 const stats = [
-    { value: '10+', label: 'Years Experience' },
-    { value: '5000+', label: 'Patients Healed' },
-    { value: '12+', label: 'Conditions Treated' },
+    { value: '25+', label: 'Years Experience' },
+    { value: '10,000+', label: 'Patients Healed' },
+    { value: 'Worldwide', label: 'Consultation' },
+]
+
+const credentials = [
+    'BHMS Qualified',
+    'Specialist in ADVANCED HOMEOPATHY',
+    '25+ Years of Clinical Experience',
+    '10,000+ Patients Treated',
+    'Worldwide Patient Consultation',
 ]
 
 const AboutPreview = () => {
@@ -29,7 +38,7 @@ const AboutPreview = () => {
                     <div className="relative w-full max-w-sm aspect-[3/4] rounded-2xl overflow-hidden shadow-xl z-10 border-2 border-[#0097a7]/30">
                         <img
                             src={doctorImg}
-                            alt="Doctor"
+                            alt="Dr. Smrity Joshi Sharma"
                             loading="eager"
                             className="w-full h-full object-cover"
                         />
@@ -38,7 +47,7 @@ const AboutPreview = () => {
                     <div className="absolute -bottom-4 -right-2 lg:-right-6 z-20 text-white px-5 py-3 rounded-xl shadow-lg"
                         style={{ backgroundColor: '#0097a7' }}>
                         <p className="text-xs text-[#b2ebf2] uppercase tracking-wider">Qualified</p>
-                        <p className="text-sm font-bold">BHMS, CGO, DNHE, FCAH</p>
+                        <p className="text-sm font-bold">BHMS · Adv. Homeopathy</p>
                     </div>
                 </motion.div>
 
@@ -53,24 +62,36 @@ const AboutPreview = () => {
                     <div>
                         <span className="section-tag">About the Doctor</span>
                         <h2 className="text-3xl lg:text-4xl font-bold text-gray-800 mt-3 leading-tight">
-                            Healing with <span style={{ color: '#0097a7' }}>Nature's</span> Wisdom
+                            Dr. Smrity Joshi <span style={{ color: '#0097a7' }}>Sharma</span>
                         </h2>
+                        <p className="text-[#0097a7] font-semibold mt-1 text-sm tracking-wide uppercase">
+                            Advanced Homeopathy Specialist
+                        </p>
                     </div>
 
                     <div className="w-14 h-0.5 bg-[#0097a7]" />
 
                     <p className="text-gray-500 leading-relaxed text-base">
-                        A dedicated and compassionate homeopathic physician known for a patient-centric approach
-                        and commitment to holistic healing. With over <strong className="text-gray-800">10 years of experience</strong> managing
-                        a wide range of acute and chronic diseases.
+                        Dr. Smrity Joshi Sharma is a highly experienced homeopathy practitioner with over{' '}
+                        <strong className="text-gray-800">25 years of expertise</strong>. She is known for her specialization in{' '}
+                        <strong className="text-[#006978]">ADVANCED HOMEOPATHY</strong>, using modern and result-oriented
+                        approaches (work on mind method) to treat the root cause of diseases. Her treatments are safe,
+                        natural, and completely personalized for each patient. She consults patients worldwide through
+                        both online and in-clinic sessions.
                     </p>
 
-                    <div className="bg-[#f5f9fa] border border-[#e0f7fa] rounded-xl p-5">
-                        <h4 className="font-semibold text-[#006978] mb-2">Areas of Special Interest</h4>
-                        <p className="text-gray-500 text-sm leading-relaxed">
-                            Lifestyle disorders, skin problems, female health issues, pediatric complaints,
-                            allergies, and chronic illnesses.
-                        </p>
+                    {/* Credentials checklist */}
+                    <div className="bg-[#f5f9fa] border border-[#e0f7fa] rounded-xl p-5 space-y-2">
+                        <h4 className="font-semibold text-[#006978] mb-3 flex items-center gap-2">
+                            <Globe size={16} />
+                            Credentials &amp; Specialization
+                        </h4>
+                        {credentials.map(c => (
+                            <div key={c} className="flex items-center gap-2">
+                                <CheckCircle size={14} className="shrink-0" style={{ color: '#0097a7' }} />
+                                <p className="text-gray-600 text-sm">{c}</p>
+                            </div>
+                        ))}
                     </div>
 
                     {/* Stats */}

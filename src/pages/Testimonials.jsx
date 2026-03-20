@@ -2,73 +2,142 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { Star, Quote } from 'lucide-react'
 
+const GOOGLE_REVIEW_URL = 'https://share.google/WonD5nVqccqcbgJcZ'
+
 const testimonials = [
-    { name: 'Priya Sharma', condition: 'PCOD / Hormonal Imbalance', quote: 'After years of struggling with PCOD, I finally found lasting relief through homeopathy. The treatment was gentle yet incredibly effective.', rating: 5 },
-    { name: 'Rajesh Mehta', condition: 'Psoriasis', quote: 'I had severe psoriasis for 8 years. Within 6 months of homeopathic treatment, my skin cleared up beautifully. I am so grateful for this gentle healing.', rating: 5 },
-    { name: 'Anita Desai', condition: 'Child Immunity & Tonsillitis', quote: 'My daughter used to fall sick every month. After homeopathic treatment, her immunity has improved dramatically. Highly recommend!', rating: 5 },
-    { name: 'Suresh Patil', condition: 'Diabetes Care', quote: 'My blood sugar levels have stabilized remarkably with supportive homeopathic treatment alongside my regular medication. Life-changing experience.', rating: 5 },
-    { name: 'Meena Kulkarni', condition: 'Anxiety & Insomnia', quote: 'The constitutional treatment helped me overcome severe anxiety and sleep issues without any side effects. I feel like a completely new person now.', rating: 5 },
-    { name: 'Kavita Joshi', condition: 'Hair Fall & Skin', quote: 'Tremendous improvement in my hair fall and skin quality. The holistic approach addressed my problems from the root and the results were amazing.', rating: 5 },
+    {
+        name: 'Shiv Shankar Rai',
+        date: 'A year ago',
+        condition: 'General Health',
+        quote: 'Dr. Smrity Joshi Sharma is an excellent homeopathy doctor! She listens carefully, understands the root cause, and provides highly effective treatments. Her expertise and compassionate care make her the best choice for holistic healing. Highly recommended!',
+        rating: 5,
+        initial: 'S',
+    },
+    {
+        name: 'Manoj Meena',
+        date: 'A year ago',
+        condition: 'Chronic Illness',
+        quote: 'Dr. Smrity Joshi Sharma is the best homeopathy doctor in India! Her precise diagnosis, personalized treatment, and caring approach make a real difference. I saw amazing improvement in my health within weeks. Highly recommended for anyone seeking natural and effective healing! Once again thank you Dr.',
+        rating: 5,
+        initial: 'M',
+    },
+    {
+        name: 'Yogita Dorle',
+        date: '2 years ago',
+        condition: 'Child Cough & Breathing',
+        quote: 'Dr. Smriti is a wonderful doctor. Her medicines worked like magic for my 4 year old son who was taking 2 pumps thrice a day for his cough and breathing problems. Within 2 weeks he showed great results and was able to eat all his favourite foods and still not have cough due to his strong immunity built up. Would really recommend homeopathic medicines by Dr. Smriti.',
+        rating: 5,
+        initial: 'Y',
+    },
+    {
+        name: 'Aparna Bhargava',
+        date: '3 years ago',
+        condition: 'Anxiety',
+        quote: 'I have been taking medicine from Dr Smrity for anxiety for last 4 months and have seen considerable improvement in my health. She is very understanding and knowledgeable and makes the person very comfortable. Thank you Doctor for all your help.',
+        rating: 5,
+        initial: 'A',
+    },
+    {
+        name: 'Rashmi Singh',
+        date: 'Sept 14, 2019',
+        condition: 'Allergic Cold & Cough',
+        quote: 'Dr. Smrity is a very good and friendly consultant. I was very sensitive to allergic cold and cough due to change in climatic conditions. Thanks to her, that I got rid of my childhood problem.',
+        rating: 5,
+        initial: 'R',
+    },
+    {
+        name: 'Mayank Gupta',
+        date: 'Sept 14, 2019',
+        condition: 'Root Cause Treatment',
+        quote: 'Very good homeopathic doctor. She does thorough analysis of patient\'s problem before starting treatment. She is very good in identifying the root cause and curing the disease permanently.',
+        rating: 5,
+        initial: 'M',
+    },
+    {
+        name: 'Ritika Kulkarni',
+        date: 'Sept 11, 2019',
+        condition: 'Tonsillitis (Child)',
+        quote: 'Dr. Smrity is a professional homeopathy doctor. My daughter was suffering from tonsillitis since her childhood. Earlier I used to give antibiotics, but now after taking the treatment from Dr Smrity I can see a lot of improvement in my daughters health. She has become like a family doctor now. Apart from profession she is a very polite and helpful doctor. Definitely would like to recommend her.',
+        rating: 5,
+        initial: 'R',
+    },
+    {
+        name: 'Aditya Shukla',
+        date: 'A year ago',
+        condition: 'Health & Beauty',
+        quote: 'Trusted for Health and Beauty — exceptional homeopathic and cosmetic solutions. Her personalized treatments bring natural healing and visible results. A go-to expert for holistic care and confidence!',
+        rating: 5,
+        initial: 'A',
+    },
 ]
+
+const avatarColors = ['#0097a7', '#006978', '#00897b', '#0277bd', '#6d4c41', '#558b2f', '#7b1fa2', '#c62828']
 
 const Testimonials = () => (
     <div className="min-h-screen pt-20 font-sans">
         {/* Banner */}
-        <div className="bg-forest py-16 px-4 text-center relative overflow-hidden">
-            <div className="absolute text-sage/10 text-[15rem] font-serif select-none pointer-events-none right-0 top-0 leading-none">🌿</div>
-            <span className="font-sans text-xs text-gold/80 uppercase tracking-[0.25em] font-semibold">Patient Stories</span>
-            <h1 className="font-serif text-4xl lg:text-5xl font-bold text-white mt-3">Lives Transformed</h1>
-            <p className="font-sans text-white/60 mt-4 max-w-xl mx-auto text-sm">
-                Real stories from patients who experienced the power of holistic homeopathic healing.
+        <div style={{ background: 'linear-gradient(135deg, #004d5a 0%, #006978 100%)' }} className="py-16 px-4 text-center relative overflow-hidden">
+            <div className="absolute text-white/5 text-[15rem] select-none pointer-events-none right-0 top-0 leading-none">🌿</div>
+            <span className="text-xs text-[#b2ebf2] uppercase tracking-[0.25em] font-semibold">Patient Stories</span>
+            <h1 className="text-4xl lg:text-5xl font-bold text-white mt-3">Lives Transformed</h1>
+            <p className="text-white/60 mt-4 max-w-xl mx-auto text-sm">
+                Real reviews from patients who experienced the power of Advanced Homeopathy with Dr. Smrity Joshi Sharma.
             </p>
-            <div className="w-16 h-0.5 bg-gold mx-auto mt-5" />
+            <div className="w-16 h-0.5 bg-[#80deea] mx-auto mt-5" />
+
         </div>
 
-        <div className="py-24 px-4 sm:px-8 bg-sage/10">
+        <div className="py-16 px-4 sm:px-8 bg-[#f5f9fa]">
             <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {testimonials.map((t, i) => (
                     <motion.div
-                        key={t.name}
+                        key={t.name + i}
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        transition={{ duration: 0.6, delay: i * 0.1 }}
-                        className="bg-ivory border border-sage/20 rounded-2xl p-8 flex flex-col gap-4 hover:shadow-xl hover:shadow-sage/20 hover:-translate-y-1 transition-all duration-300"
+                        transition={{ duration: 0.5, delay: (i % 3) * 0.1 }}
+                        className="bg-white border border-[#e0f7fa] rounded-2xl p-7 flex flex-col gap-4 hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
                     >
                         <div className="flex gap-1">
                             {[...Array(t.rating)].map((_, idx) => (
-                                <Star key={idx} size={15} fill="#C9972B" className="text-gold" />
+                                <Star key={idx} size={15} fill="#FBBC04" className="text-[#FBBC04]" />
                             ))}
                         </div>
-                        <Quote size={28} className="text-gold/40" />
-                        <p className="font-serif text-charcoal/80 italic text-base leading-relaxed flex-1">
-                            "{t.quote}"
-                        </p>
-                        <div className="border-t border-sage/20 pt-4">
-                            <p className="font-sans font-semibold text-charcoal text-sm">{t.name}</p>
-                            <p className="font-sans text-xs text-sage mt-0.5">{t.condition}</p>
+                        <Quote size={28} className="text-[#0097a7]/30" />
+                        <p className="text-gray-600 italic text-sm leading-relaxed flex-1">"{t.quote}"</p>
+                        <div className="border-t border-gray-100 pt-4 flex items-center gap-3">
+                            <div
+                                className="w-9 h-9 rounded-full flex items-center justify-center text-white text-xs font-bold shrink-0"
+                                style={{ background: avatarColors[i % avatarColors.length] }}
+                            >
+                                {t.initial}
+                            </div>
+                            <div>
+                                <p className="font-semibold text-gray-800 text-sm">{t.name}</p>
+                                <p className="text-xs text-gray-400 mt-0.5">{t.condition}</p>
+                            </div>
                         </div>
                     </motion.div>
                 ))}
             </div>
 
-            {/* Online review nudge */}
+            {/* Add Review CTA */}
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="mt-16 text-center"
+                className="mt-14 text-center"
             >
-                <div className="inline-block bg-ivory border border-gold/30 rounded-2xl px-8 py-6 shadow-md">
-                    <p className="font-serif text-lg font-semibold text-charcoal mb-1">Share Your Experience</p>
-                    <p className="font-sans text-warmgray text-sm mb-4">Had a positive experience? Leave us a review on Google</p>
+                <div className="inline-block bg-white border border-[#e0f7fa] rounded-2xl px-8 py-7 shadow-sm">
+                    <p className="text-lg font-bold text-gray-800 mb-1">Had a positive experience?</p>
+                    <p className="text-gray-500 text-sm mb-5">Share your story and help others find the right treatment.</p>
                     <a
-                        href="https://g.page/r/review"
+                        href={GOOGLE_REVIEW_URL}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-block bg-gold hover:bg-amber-500 text-white font-sans font-semibold px-6 py-2.5 rounded-full text-sm transition-all"
+                        className="inline-flex items-center gap-2 bg-[#0097a7] hover:bg-[#006978] text-white font-semibold px-7 py-3 rounded-full text-sm transition-all duration-200 hover:-translate-y-0.5 shadow-sm hover:shadow-md"
                     >
-                        Leave a Google Review
+                        ⭐ Add a Google Review
                     </a>
                 </div>
             </motion.div>

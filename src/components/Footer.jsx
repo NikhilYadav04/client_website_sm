@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Youtube } from 'lucide-react'
-import logo from '../assets/logo (2).png'
+import logo from '../assets/loo.jpg'
 
 const Footer = () => (
     <footer style={{ backgroundColor: '#006978' }} className="text-white font-sans">
@@ -9,9 +9,9 @@ const Footer = () => (
 
             {/* Col 1: Logo + tagline + socials */}
             <div className="space-y-4">
-                <img src={logo} alt="Clinic Logo" className="h-14 w-auto object-contain" />
+                <img src={logo} alt="Dr. Smrity Joshi Sharma — Advanced Homeopathy" className="h-16 w-auto object-contain" />
                 <p className="text-white/70 text-sm leading-relaxed">
-                    Ray of hope for hopeless. Holistic healing through the power of nature.
+                    Advanced Homeopathy — treating the root cause safely and naturally for 25+ years.
                 </p>
                 <div className="flex gap-4 pt-1">
                     <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"
@@ -48,16 +48,16 @@ const Footer = () => (
                 <h4 className="text-white font-bold text-sm uppercase tracking-wider mb-4">Contact</h4>
                 <div className="flex items-start gap-3 text-sm text-white/70">
                     <MapPin size={15} className="text-[#b2ebf2] shrink-0 mt-0.5" />
-                    <span>12, Wellness Avenue, Sector 4,<br />Green Park, New Delhi – 110016</span>
+                    <span>Kanjurmarg (East),<br />Mumbai – 400042, Maharashtra</span>
                 </div>
                 <div className="flex items-center gap-3 text-sm text-white/70">
                     <Phone size={15} className="text-[#b2ebf2] shrink-0" />
-                    <a href="tel:+919309971261" className="hover:text-white transition-colors">+91 93099 71261</a>
+                    <a href="tel:+919321953605" className="hover:text-white transition-colors">+91 93219 53605</a>
                 </div>
                 <div className="flex items-center gap-3 text-sm text-white/70">
                     <Mail size={15} className="text-[#b2ebf2] shrink-0" />
-                    <a href="mailto:drpriyamehta.homoeo@gmail.com" className="hover:text-white transition-colors break-all">
-                        drpriyamehta.homoeo@gmail.com
+                    <a href="mailto:drsmrityjoshi@gmail.com" className="hover:text-white transition-colors break-all">
+                        drsmrityjoshi@gmail.com
                     </a>
                 </div>
             </div>
@@ -69,13 +69,13 @@ const Footer = () => (
                     Clinic Hours
                 </h4>
                 <div className="text-sm space-y-1 text-white/70">
-                    <p className="text-white/40 uppercase tracking-wider text-xs">Mon – Sat</p>
-                    <p className="text-white font-semibold">10:30 AM – 1:30 PM</p>
+                    <p className="text-white/40 uppercase tracking-wider text-xs">Mon – Sat (IST)</p>
+                    <p className="text-white font-semibold">10:00 AM – 12:00 PM</p>
                     <p className="text-[#b2ebf2] text-xs font-semibold">— and —</p>
-                    <p className="text-white font-semibold">4:30 PM – 8:00 PM</p>
+                    <p className="text-white font-semibold">05:30 PM – 08:00 PM</p>
                 </div>
                 <div className="mt-4 inline-block bg-white/10 text-[#b2ebf2] px-3 py-1 rounded-full text-xs font-semibold">
-                    Online Consultations Available
+                    Worldwide Online Consultation
                 </div>
             </div>
         </div>
@@ -83,7 +83,7 @@ const Footer = () => (
         {/* Bottom bar */}
         <div className="border-t border-white/10">
             <div className="max-w-7xl mx-auto px-4 sm:px-8 py-4 flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-white/40">
-                <p>© {new Date().getFullYear()} Dr. Priya Mehta's Homoeopathic Healing. All rights reserved.</p>
+                <p>© {new Date().getFullYear()} Dr. Smrity Joshi Sharma — Advanced Homeopathy. All rights reserved.</p>
                 <p className="text-center">Legal Disclaimer: Outcomes may vary. Treatments follow AYUSH guidelines.</p>
             </div>
         </div>

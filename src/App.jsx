@@ -9,6 +9,7 @@ import DiseaseDetailPage from './pages/DiseaseDetailPage'
 import DiseasesPage from './pages/DiseasesPage'
 import Testimonials from './pages/Testimonials'
 import Contact from './pages/Contact'
+import FloatingWhatsApp from './components/FloatingWhatsApp'
 
 // Scrolls to top on every route change
 const ScrollToTop = () => {
@@ -42,6 +43,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
+      <FloatingWhatsApp />
     </Router>
   )
 }

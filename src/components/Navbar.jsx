@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { NavLink, Link, useLocation } from 'react-router-dom'
 import { Menu, X, Phone, ChevronDown, ChevronRight } from 'lucide-react'
-import logo from '../assets/logo (2).png'
+import logo from '../assets/loo.jpg'
 import ConsultationModal from './ConsultationModal'
 import { diseaseCategories, homeopathyNavItems } from '../data/diseasesData'
 
-const PHONE = '+91 93099 71261'
+const PHONE = '+91 93219 53605'
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false)
@@ -48,7 +48,7 @@ const Navbar = () => {
 
                     {/* Logo */}
                     <NavLink to="/" className="flex items-center shrink-0">
-                        <img src={logo} alt="Dr. Priya Mehta's Homoeopathic Healing" className="h-14 w-auto object-contain" />
+                        <img src={logo} alt="Dr. Smrity Joshi Sharma – Advanced Homeopathy" className="h-14 w-auto object-contain" />
                     </NavLink>
 
                     {/* Desktop Nav */}

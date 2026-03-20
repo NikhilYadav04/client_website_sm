@@ -2,9 +2,23 @@ import React from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { homeopathyTopics } from '../data/diseasesData'
 
+// Local about images — mapped 1:1 to the 4 topic slugs in order
+import about1 from '../assets/about/1.jpg'
+import about2 from '../assets/about/2.jpg'
+import about3 from '../assets/about/3.jpg'
+import about4 from '../assets/about/4.jpg'
+
+const slugImageMap = {
+    'hahnemanns-theory': about1,
+    'individualising-case': about2,
+    'mind-method': about3,
+    'applicable-diseases': about4,
+}
+
 const HomeopathySubPage = () => {
     const { slug } = useParams()
     const topic = homeopathyTopics[slug]
+    const bannerImg = slugImageMap[slug]
 
     if (!topic) {
         return (
@@ -22,20 +36,46 @@ const HomeopathySubPage = () => {
 
     return (
         <div className="min-h-screen bg-white">
-            {/* ── Banner ── */}
-            <div className="page-banner pt-20">
-                <div className="page-banner-text">
-                    <p className="text-[#b2ebf2] text-sm font-semibold uppercase tracking-widest mb-3">
+            {/* ── Banner — two-column layout with image fitting perfectly ── */}
+            <div
+                className="pt-20 grid grid-cols-1 lg:grid-cols-2"
+                style={{ minHeight: '380px', background: 'linear-gradient(135deg, #004d5a 0%, #006978 100%)' }}
+            >
+                {/* Left — text */}
+                <div className="flex flex-col justify-center px-8 sm:px-14 py-14">
+                    <span
+                        className="text-xs font-bold uppercase tracking-[0.2em] mb-3"
+                        style={{ color: '#b2ebf2' }}
+                    >
                         {topic.bannerSubtitle}
+                    </span>
+                    <h1
+                        className="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight text-white"
+                    >
+                        {topic.title}
+                    </h1>
+                    <div className="w-14 h-0.5 mt-6" style={{ backgroundColor: '#80deea' }} />
+                    <p className="text-white/70 text-sm mt-5 max-w-md leading-relaxed">
+                        Advanced Homeopathy · Dr. Smrity Joshi Sharma · 25+ Years Experience
                     </p>
-                    <h1>{topic.title}</h1>
                 </div>
-                <div className="page-banner-image">
-                    <img
-                        src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=800&q=80"
-                        alt="Homoeopathy"
-                    />
-                </div>
+
+                {/* Right — full-height image, no crop */}
+                {bannerImg && (
+                    <div className="relative hidden lg:block" style={{ minHeight: '380px' }}>
+                        <img
+                            src={bannerImg}
+                            alt={topic.title}
+                            className="absolute inset-0 w-full h-full object-cover"
+                            style={{ objectPosition: 'center top' }}
+                        />
+                        {/* subtle left-edge fade so it blends with teal left panel */}
+                        <div
+                            className="absolute inset-0 pointer-events-none"
+                            style={{ background: 'linear-gradient(to right, rgba(0,77,90,0.6) 0%, transparent 40%)' }}
+                        />
+                    </div>
+                )}
             </div>
 
             {/* ── Content ── */}
@@ -72,19 +112,7 @@ const HomeopathySubPage = () => {
                     ))}
                 </div>
 
-                {/* CTA */}
-                <div className="mt-14 bg-[#e0f7fa] rounded-xl p-8 text-center">
-                    <h3 className="text-xl font-bold text-[#006978] mb-2">Consult Dr. Priya Mehta</h3>
-                    <p className="text-gray-600 mb-5 text-sm">
-                        Experience personalised homoeopathic care tailored to your individual needs.
-                    </p>
-                    <Link
-                        to="/contact"
-                        className="inline-block bg-[#0097a7] hover:bg-[#006978] text-white font-semibold px-8 py-3 rounded-full transition-colors"
-                    >
-                        Book Consultation
-                    </Link>
-                </div>
+
             </div>
         </div>
     )

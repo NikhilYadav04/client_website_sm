@@ -1,39 +1,42 @@
 import React, { useState, useEffect, useCallback } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { useNavigate } from 'react-router-dom'
-import { ChevronLeft, ChevronRight } from 'lucide-react'
+import { ChevronLeft, ChevronRight, MessageCircle } from 'lucide-react'
 import ConsultationModal from './ConsultationModal'
+import homeo1 from '../assets/homeopathy/1.jpg'
+import homeo2 from '../assets/homeopathy/2.jpg'
+import homeo3 from '../assets/homeopathy/3.jpg'
+import doctorCard from '../assets/doctor/2.jpg'
+
+const WHATSAPP_NUMBER = '919321953605'
 
 const slides = [
     {
-        img: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1600&q=85',
+        img: homeo1,
+        headline: 'ADVANCED HOMEOPATHY',
+        accent: 'SPECIALIST',
+        sub: 'Safe | Natural | Root Cause Treatment | 25+ Years Experience',
+    },
+    {
+        img: homeo2,
         headline: 'Heal From Within,',
         accent: 'Naturally',
-        sub: 'Expert Homeopathic Physician & Consultant',
+        sub: 'Detailed Case Study · Personalized Treatment · Zero Side Effects',
     },
     {
-        img: 'https://images.unsplash.com/photo-1512678080530-7760d81faba6?w=1600&q=85',
-        headline: 'Safe. Gentle.',
-        accent: 'Effective.',
-        sub: 'Zero Side Effects · Treats Root Cause · All Ages',
-    },
-    {
-        img: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=1600&q=85',
+        img: homeo3,
         headline: 'Your Health,',
         accent: 'Our Mission.',
-        sub: 'Personalised homeopathic care for every individual',
+        sub: 'Worldwide Online Consultation Available — Zoom · WhatsApp · Call',
     },
 ]
 
 const Hero = () => {
-    const navigate = useNavigate()
     const [current, setCurrent] = useState(0)
     const [modalOpen, setModalOpen] = useState(false)
 
     const next = useCallback(() => setCurrent(c => (c + 1) % slides.length), [])
     const prev = useCallback(() => setCurrent(c => (c - 1 + slides.length) % slides.length), [])
 
-    // Auto-advance every 6 seconds
     useEffect(() => {
         const t = setInterval(next, 6000)
         return () => clearInterval(t)
@@ -62,11 +65,11 @@ const Hero = () => {
                     />
                 </AnimatePresence>
 
-                {/* ── Reduced overlay — image clearly visible ── */}
+                {/* ── Overlay ── */}
                 <div
                     className="absolute inset-0"
                     style={{
-                        background: 'linear-gradient(to bottom, rgba(0,90,104,0.48) 0%, rgba(0,60,74,0.62) 100%)',
+                        background: 'linear-gradient(to bottom, rgba(0,80,95,0.60) 0%, rgba(0,50,65,0.75) 100%)',
                         zIndex: 1,
                     }}
                 />
@@ -98,13 +101,20 @@ const Hero = () => {
                 {/* ── Content ── */}
                 <div className="relative z-10 text-center px-4 sm:px-8 max-w-4xl mx-auto">
 
-                    <div className="flex items-center justify-center gap-3 mb-6">
-                        <span className="h-px w-10 bg-white/50" />
-                        <span className="text-white/90 text-sm font-semibold tracking-[0.2em] uppercase">
-                            Holistic Healing  •  Homoeopathy
-                        </span>
-                        <span className="h-px w-10 bg-white/50" />
-                    </div>
+                    {/* Worldwide tag — click scrolls to international section */}
+                    <motion.button
+                        initial={{ opacity: 0, y: -10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6 }}
+                        onClick={() => {
+                            const el = document.getElementById('international')
+                            if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+                        }}
+                        className="inline-flex items-center gap-2 mb-5 px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase cursor-pointer transition-all duration-200 hover:scale-105"
+                        style={{ background: 'rgba(0,151,167,0.35)', border: '1px solid rgba(178,235,242,0.4)', color: '#b2ebf2' }}
+                    >
+                        🌍 Worldwide Consultation Available
+                    </motion.button>
 
                     <AnimatePresence mode="wait">
                         <motion.h1
@@ -129,13 +139,15 @@ const Hero = () => {
                             animate={{ opacity: 1 }}
                             exit={{ opacity: 0 }}
                             transition={{ duration: 0.5, delay: 0.15 }}
-                            className="text-white/85 text-lg font-light tracking-wide mb-1"
+                            className="text-white/90 text-lg font-light tracking-wide mb-2"
                         >
                             {slide.sub}
                         </motion.p>
                     </AnimatePresence>
 
-                    <p className="text-white/60 text-sm tracking-widest uppercase font-medium mb-10">BHMS, CGO, DNHE, FCAH</p>
+                    {/* Doctor name */}
+                    <p className="text-white/80 text-base font-semibold tracking-wide mb-1">Dr. Smrity Joshi Sharma</p>
+                    <p className="text-white/50 text-xs tracking-widest uppercase font-medium mb-10">BHMS · Advanced Homeopathy Specialist</p>
 
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <button
@@ -143,14 +155,33 @@ const Hero = () => {
                             className="bg-white font-bold px-8 py-4 rounded-full text-base transition-all duration-200 hover:bg-[#e0f7fa] hover:shadow-xl hover:-translate-y-0.5"
                             style={{ color: '#006978' }}
                         >
-                            Book Consultation
+                            📅 Book Appointment
                         </button>
-                        <button
-                            onClick={() => navigate('/diseases')}
-                            className="border-2 border-white/60 hover:border-white text-white font-semibold px-8 py-4 rounded-full text-base transition-all duration-200 hover:bg-white/10 hover:-translate-y-0.5"
+                        <a
+                            href={`https://wa.me/${WHATSAPP_NUMBER}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center justify-center gap-2 border-2 border-white/60 hover:border-white text-white font-semibold px-8 py-4 rounded-full text-base transition-all duration-200 hover:bg-white/10 hover:-translate-y-0.5"
                         >
-                            View Treatments
-                        </button>
+                            <MessageCircle size={18} />
+                            WhatsApp Now
+                        </a>
+                    </div>
+                </div>
+
+                {/* ── Doctor floating card ── */}
+                <div
+                    className="absolute bottom-20 left-6 z-20 flex items-center gap-3 rounded-2xl px-4 py-3 shadow-xl"
+                    style={{ background: 'rgba(0,0,0,0.45)', backdropFilter: 'blur(10px)', border: '1px solid rgba(255,255,255,0.2)' }}
+                >
+                    <img
+                        src={doctorCard}
+                        alt="Dr. Smrity Joshi Sharma"
+                        className="w-12 h-12 rounded-full object-cover border-2 border-white/50"
+                    />
+                    <div>
+                        <p className="text-white text-xs font-bold leading-tight">Dr. Smrity Joshi Sharma</p>
+                        <p className="text-[#80deea] text-[10px] font-semibold uppercase tracking-wide">Advanced Homeopathy</p>
                     </div>
                 </div>
 

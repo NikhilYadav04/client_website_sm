@@ -1,18 +1,21 @@
 import React, { useState, useCallback, useEffect } from 'react'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
+import homeo1 from '../assets/homeopathy/1.jpg'
+import homeo2 from '../assets/homeopathy/2.jpg'
+import homeo3 from '../assets/homeopathy/3.jpg'
 
 const slides = [
     {
-        img: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=1600&q=85',
+        img: homeo1,
         caption: 'Gentle, natural medicines for lasting health',
     },
     {
-        img: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1600&q=85',
-        caption: 'Personalised care for every patient',
+        img: homeo2,
+        caption: 'Advanced Homeopathy — treating the root cause',
     },
     {
-        img: 'https://images.unsplash.com/photo-1491895200222-0fc4a4c35e18?w=1600&q=85',
-        caption: 'Holistic healing — body, mind & spirit',
+        img: homeo3,
+        caption: 'Personalised care for every patient, worldwide',
     },
 ]
 
@@ -37,7 +40,7 @@ const MidBanner = () => {
                 >
                     <img src={s.img} alt={s.caption} className="w-full h-full object-cover" />
                     {/* Light overlay */}
-                    <div className="absolute inset-0" style={{ background: 'rgba(0,90,104,0.38)' }} />
+                    <div className="absolute inset-0" style={{ background: 'rgba(0,90,104,0.45)' }} />
                     {/* Caption */}
                     <div className="absolute bottom-8 left-1/2 -translate-x-1/2 text-center z-10 w-full px-4">
                         <p className="text-white text-lg sm:text-2xl font-bold drop-shadow-md">{s.caption}</p>
