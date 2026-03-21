@@ -5,9 +5,9 @@ const pillars = [
     { icon: '🧠', title: 'Advanced Homeopathy Approach', desc: 'Modern mind-method techniques targeting root cause, not just symptoms' },
     { icon: '✦', title: 'No Side Effects', desc: 'Natural medicines, completely safe for all ages including children' },
     { icon: '🎯', title: 'Root Cause Treatment', desc: 'Deep case analysis to address the origin of disease permanently' },
-    { icon: '🕐', title: 'Detailed Case Study', desc: '2–3 hour first consultation for thorough understanding of your case' },
+    { icon: '🕐', title: 'Detailed Case Study', desc: '1–2 hour first consultation for thorough understanding of your case' },
     { icon: '📋', title: 'Personalized Treatment Plan', desc: 'Every medicine and plan crafted specifically for you as an individual' },
-    { icon: '⭐', title: '25+ Years Experienced Doctor', desc: 'Over 25 years of clinical expertise with 10,000+ patients treated' },
+    { icon: '⭐', title: '20+ Years Experienced Doctor', desc: 'Over 20 years of clinical expertise with 10,000+ patients treated' },
     { icon: '🌍', title: 'Worldwide Online Consultation', desc: 'Consult via Zoom, Google Meet, WhatsApp or phone call from anywhere' },
 ]
 
@@ -22,7 +22,7 @@ const WhyHomeopathy = () => (
             >
                 <span className="text-[#b2ebf2] text-xs uppercase tracking-widest font-semibold">Why Choose Us</span>
                 <h2 className="text-3xl font-bold text-white mt-2">
-                    Why Choose <span style={{ color: '#80deea' }}>Dr. Smrity Joshi Sharma</span>?
+                    Why Choose <span style={{ color: '#80deea' }}>Dr. Smrity Joshi</span>?
                 </h2>
                 <p className="text-white/70 mt-3 text-sm max-w-xl mx-auto">
                     Specialist in <strong className="text-white">ADVANCED HOMEOPATHY</strong> — a modern approach treating the mind, body and root cause

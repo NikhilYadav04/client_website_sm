@@ -54,7 +54,7 @@ const timezones = [
 
 const highlights = [
     { icon: <Users size={28} />, text: 'Thousands of patients trust us worldwide' },
-    { icon: <Award size={28} />, text: '25+ Years of Clinical Experience' },
+    { icon: <Award size={28} />, text: '20+ Years of Clinical Experience' },
     { icon: <Globe size={28} />, text: 'Advanced Homeopathy Specialist' },
 ]
 
@@ -88,7 +88,7 @@ const InternationalSection = () => (
                     <span style={{ color: '#80deea' }}>International Patients</span>
                 </h2>
                 <p className="text-white/70 mt-4 text-base max-w-2xl mx-auto leading-relaxed">
-                    Dr. Smrity Joshi Sharma provides <strong className="text-white">Advanced Homeopathy</strong> consultation
+                    Dr. Smrity Joshi provides <strong className="text-white">Advanced Homeopathy</strong> consultation
                     to patients worldwide through online platforms. Consult from anywhere via Zoom, Google Meet, WhatsApp, or phone call.
                 </p>
                 <div className="w-16 h-0.5 mx-auto mt-6" style={{ backgroundColor: '#80deea' }} />

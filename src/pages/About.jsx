@@ -4,7 +4,7 @@ import { CheckCircle, Globe } from 'lucide-react'
 import doctorImg from '../assets/doctor/1.jpg'
 
 const stats = [
-    { value: '25+', label: 'Years Experience' },
+    { value: '20+', label: 'Years Experience' },
     { value: '10,000+', label: 'Patients Healed' },
     { value: 'BHMS', label: 'Qualified' },
 ]
@@ -12,7 +12,7 @@ const stats = [
 const credentials = [
     'BHMS Qualified',
     'Specialist in ADVANCED HOMEOPATHY',
-    '25+ Years of Clinical Experience',
+    '20+ Years of Clinical Experience',
     '10,000+ Patients Treated',
     'Worldwide Patient Consultation',
 ]
@@ -27,7 +27,7 @@ const About = () => (
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
                 <span className="text-xs text-[#b2ebf2] uppercase tracking-[0.25em] font-semibold">Our Story</span>
                 <h1 className="text-4xl lg:text-5xl font-bold text-white mt-3">About Dr. Smrity Joshi Sharma</h1>
-                <p className="text-white/70 mt-3 text-sm">Advanced Homeopathy Specialist · 25+ Years Experience · Worldwide Consultation</p>
+                <p className="text-white/70 mt-3 text-sm">Advanced Homeopathy Specialist · 20+ Years Experience · Worldwide Consultation</p>
                 <div className="w-16 h-0.5 mx-auto mt-5" style={{ backgroundColor: '#80deea' }} />
             </motion.div>
         </div>
@@ -93,7 +93,7 @@ const About = () => (
                     <p className="text-gray-500 leading-relaxed text-sm">
                         Her treatment approach focuses on identifying the root cause of the disease rather than merely suppressing
                         symptoms, emphasizing detailed case evaluation and holistic understanding of the patient — her first
-                        consultation lasts 2–3 hours for thorough case analysis.
+                        consultation lasts 1–2 hours for thorough case analysis.
                     </p>
 
                     {/* Stats */}

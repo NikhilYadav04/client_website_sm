@@ -9,9 +9,9 @@ const Footer = () => (
 
             {/* Col 1: Logo + tagline + socials */}
             <div className="space-y-4">
-                <img src={logo} alt="Dr. Smrity Joshi Sharma — Advanced Homeopathy" className="h-16 w-auto object-contain" />
+                <img src={logo} alt="Dr. Smrity Joshi — Advanced Homeopathy" className="h-16 w-auto object-contain" />
                 <p className="text-white/70 text-sm leading-relaxed">
-                    Advanced Homeopathy — treating the root cause safely and naturally for 25+ years.
+                    Advanced Homeopathy — treating the root cause safely and naturally for 20+ years.
                 </p>
                 <div className="flex gap-4 pt-1">
                     <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"
@@ -83,7 +83,7 @@ const Footer = () => (
         {/* Bottom bar */}
         <div className="border-t border-white/10">
             <div className="max-w-7xl mx-auto px-4 sm:px-8 py-4 flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-white/40">
-                <p>© {new Date().getFullYear()} Dr. Smrity Joshi Sharma — Advanced Homeopathy. All rights reserved.</p>
+                <p>© {new Date().getFullYear()} Dr. Smrity Joshi — Advanced Homeopathy. All rights reserved.</p>
                 <p className="text-center">Legal Disclaimer: Outcomes may vary. Treatments follow AYUSH guidelines.</p>
             </div>
         </div>

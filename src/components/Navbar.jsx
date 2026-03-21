@@ -48,7 +48,7 @@ const Navbar = () => {
 
                     {/* Logo */}
                     <NavLink to="/" className="flex items-center shrink-0">
-                        <img src={logo} alt="Dr. Smrity Joshi Sharma – Advanced Homeopathy" className="h-14 w-auto object-contain" />
+                        <img src={logo} alt="Dr. Smrity Joshi – Advanced Homeopathy" className="h-14 w-auto object-contain" />
                     </NavLink>
 
                     {/* Desktop Nav */}

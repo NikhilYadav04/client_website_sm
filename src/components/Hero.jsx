@@ -14,7 +14,7 @@ const slides = [
         img: homeo1,
         headline: 'ADVANCED HOMEOPATHY',
         accent: 'SPECIALIST',
-        sub: 'Safe | Natural | Root Cause Treatment | 25+ Years Experience',
+        sub: 'Safe | Natural | Root Cause Treatment | 20+ Years Experience',
     },
     {
         img: homeo2,
@@ -146,7 +146,7 @@ const Hero = () => {
                     </AnimatePresence>
 
                     {/* Doctor name */}
-                    <p className="text-white/80 text-base font-semibold tracking-wide mb-1">Dr. Smrity Joshi Sharma</p>
+                    <p className="text-white/80 text-base font-semibold tracking-wide mb-1">Dr. Smrity Joshi</p>
                     <p className="text-white/50 text-xs tracking-widest uppercase font-medium mb-10">BHMS · Advanced Homeopathy Specialist</p>
 
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -176,11 +176,11 @@ const Hero = () => {
                 >
                     <img
                         src={doctorCard}
-                        alt="Dr. Smrity Joshi Sharma"
+                        alt="Dr. Smrity Joshi"
                         className="w-12 h-12 rounded-full object-cover border-2 border-white/50"
                     />
                     <div>
-                        <p className="text-white text-xs font-bold leading-tight">Dr. Smrity Joshi Sharma</p>
+                        <p className="text-white text-xs font-bold leading-tight">Dr. Smrity Joshi</p>
                         <p className="text-[#80deea] text-[10px] font-semibold uppercase tracking-wide">Advanced Homeopathy</p>
                     </div>
                 </div>

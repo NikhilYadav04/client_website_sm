@@ -10,10 +10,10 @@ import event4 from '../assets/events/organizing-camp-1.jpg'
 import event5 from '../assets/events/organizing-camp-2.jpg'
 
 const events = [
-    { img: event1, title: 'School Health Camp', sub: 'Detailed Case Study & Root Cause Treatment', desc: 'Dr. Smrity Joshi Sharma conducted an extensive health camp at school, focusing on detailed case studies, identifying root causes of illness, and providing personalized homeopathic medicine plans for affected students and staff.' },
+    { img: event1, title: 'School Health Camp', sub: 'Detailed Case Study & Root Cause Treatment', desc: 'Dr. Smrity Joshi conducted an extensive health camp at school, focusing on detailed case studies, identifying root causes of illness, and providing personalized homeopathic medicine plans for affected students and staff.' },
     { img: event2, title: 'Cancer Awareness Seminar', sub: 'Cervical Cancer Awareness Program', desc: 'A special awareness seminar on cervical cancer prevention and the role of Advanced Homeopathy in supporting patients through treatment. Dr. Smrity discussed natural, safe approaches to strengthening immunity and overall health.' },
     { img: event3, title: 'Hahnemann Forum', sub: 'Homeopathy Forum & Knowledge Session', desc: 'Dr. Smrity represented at the Hahnemannian Homoeo Forum — a prestigious knowledge-sharing platform for homeopathic practitioners. Topics covered included advanced case-taking techniques and the mind-method approach.' },
-    { img: event4, title: 'Medical Camp (Session 1)', sub: 'Organizing Free Health Camp', desc: 'A free community health camp organized by Dr. Smrity Joshi Sharma, providing complimentary consultations and homeopathic medicines to underprivileged patients. Root cause analysis and personalized treatment plans were provided.' },
+    { img: event4, title: 'Medical Camp (Session 1)', sub: 'Organizing Free Health Camp', desc: 'A free community health camp organized by Dr. Smrity Joshi, providing complimentary consultations and homeopathic medicines to underprivileged patients. Root cause analysis and personalized treatment plans were provided.' },
     { img: event5, title: 'Medical Camp (Session 2)', sub: 'Organizing Free Health Camp', desc: 'Second session of the free community health camp offering in-depth case evaluations, awareness about homeopathic treatment for chronic diseases, and distributing medicines at no cost to patients in need.' },
 ]
 
@@ -34,7 +34,7 @@ const EventsSection = () => {
                         Activities &amp; <span style={{ color: '#0097a7' }}>Events</span>
                     </h2>
                     <p className="text-gray-500 mt-3 text-sm max-w-lg mx-auto">
-                        Dr. Smrity Joshi Sharma actively participates in health camps, awareness seminars, and medical forums to spread the benefits of Advanced Homeopathy
+                        Dr. Smrity Joshi actively participates in health camps, awareness seminars, and medical forums to spread the benefits of Advanced Homeopathy
                     </p>
                     <div className="w-14 h-0.5 bg-[#0097a7] mx-auto mt-5" />
                 </motion.div>

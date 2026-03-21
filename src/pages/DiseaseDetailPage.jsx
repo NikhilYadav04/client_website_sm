@@ -70,7 +70,7 @@ const DiseaseDetailPage = () => {
                     </h1>
                     <div className="w-14 h-0.5 mt-5" style={{ backgroundColor: '#80deea' }} />
                     <p className="text-white/60 text-sm mt-4 max-w-md">
-                        Advanced Homoeopathy · Dr. Smrity Joshi Sharma · 25+ Years Experience
+                        Advanced Homoeopathy · Dr. Smrity Joshi · 20+ Years Experience
                     </p>
                 </div>
                 {/* Right — category image */}
@@ -160,7 +160,7 @@ const DiseaseDetailPage = () => {
                         Get Homoeopathic Treatment for {disease.title}
                     </h3>
                     <p className="text-gray-600 mb-5 text-sm">
-                        Book a consultation with Dr. Smrity Joshi Sharma for a personalised homoeopathic treatment plan tailored to your individual needs.
+                        Book a consultation with Dr. Smrity Joshi for a personalised homoeopathic treatment plan tailored to your individual needs.
                     </p>
                     <Link to="/contact" className="inline-block bg-[#0097a7] hover:bg-[#006978] text-white font-semibold px-8 py-3 rounded-full transition-colors">
                         Book Consultation

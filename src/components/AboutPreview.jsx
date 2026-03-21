@@ -5,7 +5,7 @@ import { Globe, CheckCircle } from 'lucide-react'
 import doctorImg from '../assets/doctor/1.jpg'
 
 const stats = [
-    { value: '25+', label: 'Years Experience' },
+    { value: '20+', label: 'Years Experience' },
     { value: '10,000+', label: 'Patients Healed' },
     { value: 'Worldwide', label: 'Consultation' },
 ]
@@ -13,7 +13,7 @@ const stats = [
 const credentials = [
     'BHMS Qualified',
     'Specialist in ADVANCED HOMEOPATHY',
-    '25+ Years of Clinical Experience',
+    '20+ Years of Clinical Experience',
     '10,000+ Patients Treated',
     'Worldwide Patient Consultation',
 ]

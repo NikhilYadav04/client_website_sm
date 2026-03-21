@@ -9,7 +9,7 @@ const testimonials = [
         name: 'Shiv Shankar Rai',
         date: 'A year ago',
         condition: 'General Health',
-        quote: 'Dr. Smrity Joshi Sharma is an excellent homeopathy doctor! She listens carefully, understands the root cause, and provides highly effective treatments. Her expertise and compassionate care make her the best choice for holistic healing. Highly recommended!',
+        quote: 'Dr. Smrity Joshi is an excellent homeopathy doctor! She listens carefully, understands the root cause, and provides highly effective treatments. Her expertise and compassionate care make her the best choice for holistic healing. Highly recommended!',
         rating: 5,
         initial: 'S',
     },
@@ -17,7 +17,7 @@ const testimonials = [
         name: 'Manoj Meena',
         date: 'A year ago',
         condition: 'Chronic Illness',
-        quote: 'Dr. Smrity Joshi Sharma is the best homeopathy doctor in India! Her precise diagnosis, personalized treatment, and caring approach make a real difference. I saw amazing improvement in my health within weeks. Highly recommended for anyone seeking natural and effective healing! Once again thank you Dr.',
+        quote: 'Dr. Smrity Joshi is the best homeopathy doctor in India! Her precise diagnosis, personalized treatment, and caring approach make a real difference. I saw amazing improvement in my health within weeks. Highly recommended for anyone seeking natural and effective healing! Once again thank you Dr.',
         rating: 5,
         initial: 'M',
     },
@@ -81,7 +81,7 @@ const Testimonials = () => (
             <span className="text-xs text-[#b2ebf2] uppercase tracking-[0.25em] font-semibold">Patient Stories</span>
             <h1 className="text-4xl lg:text-5xl font-bold text-white mt-3">Lives Transformed</h1>
             <p className="text-white/60 mt-4 max-w-xl mx-auto text-sm">
-                Real reviews from patients who experienced the power of Advanced Homeopathy with Dr. Smrity Joshi Sharma.
+                Real reviews from patients who experienced the power of Advanced Homeopathy with Dr. Smrity Joshi.
             </p>
             <div className="w-16 h-0.5 bg-[#80deea] mx-auto mt-5" />
 

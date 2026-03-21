@@ -56,7 +56,7 @@ const HomeopathySubPage = () => {
                     </h1>
                     <div className="w-14 h-0.5 mt-6" style={{ backgroundColor: '#80deea' }} />
                     <p className="text-white/70 text-sm mt-5 max-w-md leading-relaxed">
-                        Advanced Homeopathy · Dr. Smrity Joshi Sharma · 25+ Years Experience
+                        Advanced Homeopathy · Dr. Smrity Joshi · 20+ Years Experience
                     </p>
                 </div>
 

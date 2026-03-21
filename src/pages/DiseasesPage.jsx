@@ -79,7 +79,7 @@ const DiseasesPage = () => (
             <div className="mt-16 text-center bg-[#e0f7fa] rounded-2xl p-10">
                 <h3 className="text-2xl font-bold text-[#006978] mb-3">Can't find your condition?</h3>
                 <p className="text-gray-600 mb-6 max-w-md mx-auto text-sm">
-                    Homoeopathy can help with many more conditions. Consult Dr. Smrity Joshi Sharma for a personalised assessment.
+                    Homoeopathy can help with many more conditions. Consult Dr. Smrity Joshi for a personalised assessment.
                 </p>
                 <Link to="/contact" className="inline-block bg-[#0097a7] hover:bg-[#006978] text-white font-semibold px-8 py-3 rounded-full transition-colors">
                     Book a Consultation
