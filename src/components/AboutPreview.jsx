@@ -2,7 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { useNavigate } from 'react-router-dom'
 import { Globe, CheckCircle } from 'lucide-react'
-import doctorImg from '../assets/doctor/1.jpg'
+import doctorImg from '../assets/doctor/4.jpeg'
 
 const stats = [
     { value: '20+', label: 'Years Experience' },
@@ -38,7 +38,7 @@ const AboutPreview = () => {
                     <div className="relative w-full max-w-sm aspect-[3/4] rounded-2xl overflow-hidden shadow-xl z-10 border-2 border-[#0097a7]/30">
                         <img
                             src={doctorImg}
-                            alt="Dr. Smrity Joshi Sharma"
+                            alt="Dr. Smrity Joshi"
                             loading="eager"
                             className="w-full h-full object-cover"
                         />
@@ -62,7 +62,7 @@ const AboutPreview = () => {
                     <div>
                         <span className="section-tag">About the Doctor</span>
                         <h2 className="text-3xl lg:text-4xl font-bold text-gray-800 mt-3 leading-tight">
-                            Dr. Smrity Joshi <span style={{ color: '#0097a7' }}>Sharma</span>
+                            Dr. Smrity Joshi
                         </h2>
                         <p className="text-[#0097a7] font-semibold mt-1 text-sm tracking-wide uppercase">
                             Advanced Homeopathy Specialist
@@ -72,8 +72,8 @@ const AboutPreview = () => {
                     <div className="w-14 h-0.5 bg-[#0097a7]" />
 
                     <p className="text-gray-500 leading-relaxed text-base">
-                        Dr. Smrity Joshi Sharma is a highly experienced homeopathy practitioner with over{' '}
-                        <strong className="text-gray-800">25 years of expertise</strong>. She is known for her specialization in{' '}
+                        Dr. Smrity Joshi is a highly experienced homeopathy practitioner with over{' '}
+                        <strong className="text-gray-800">20+ years of expertise</strong>. She is known for her specialization in{' '}
                         <strong className="text-[#006978]">ADVANCED HOMEOPATHY</strong>, using modern and result-oriented
                         approaches (work on mind method) to treat the root cause of diseases. Her treatments are safe,
                         natural, and completely personalized for each patient. She consults patients worldwide through

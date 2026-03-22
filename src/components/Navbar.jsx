@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { NavLink, Link, useLocation } from 'react-router-dom'
 import { Menu, X, Phone, ChevronDown, ChevronRight } from 'lucide-react'
-import logo from '../assets/loo.jpg'
+import logo from '../assets/logo.jpg'
 import ConsultationModal from './ConsultationModal'
 import { diseaseCategories, homeopathyNavItems } from '../data/diseasesData'
 

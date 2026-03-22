@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { CheckCircle, Globe } from 'lucide-react'
-import doctorImg from '../assets/doctor/1.jpg'
+import doctorImg from '../assets/doctor/4.jpeg'
 
 const stats = [
     { value: '20+', label: 'Years Experience' },
@@ -26,7 +26,7 @@ const About = () => (
             <div className="absolute text-white/5 text-[15rem] font-serif select-none pointer-events-none right-0 top-0 leading-none">🌿</div>
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
                 <span className="text-xs text-[#b2ebf2] uppercase tracking-[0.25em] font-semibold">Our Story</span>
-                <h1 className="text-4xl lg:text-5xl font-bold text-white mt-3">About Dr. Smrity Joshi Sharma</h1>
+                <h1 className="text-4xl lg:text-5xl font-bold text-white mt-3">About Dr. Smrity Joshi</h1>
                 <p className="text-white/70 mt-3 text-sm">Advanced Homeopathy Specialist · 20+ Years Experience · Worldwide Consultation</p>
                 <div className="w-16 h-0.5 mx-auto mt-5" style={{ backgroundColor: '#80deea' }} />
             </motion.div>
@@ -45,7 +45,7 @@ const About = () => (
                 >
                     <div className="absolute -top-4 -left-4 w-full h-full rounded-2xl" style={{ backgroundColor: '#e0f7fa' }} />
                     <div className="relative w-full aspect-[3/4] max-w-sm mx-auto lg:mx-0 rounded-2xl overflow-hidden border-2 border-[#0097a7]/30 shadow-2xl z-10">
-                        <img src={doctorImg} alt="Dr. Smrity Joshi Sharma" className="w-full h-full object-cover" />
+                        <img src={doctorImg} alt="Dr. Smrity Joshi" className="w-full h-full object-cover" />
                     </div>
                     <div className="absolute -bottom-5 right-0 lg:-right-8 z-20 text-white px-5 py-3 rounded-xl shadow-xl"
                         style={{ backgroundColor: '#0097a7' }}>
@@ -63,13 +63,13 @@ const About = () => (
                 >
                     <div>
                         <span className="text-xs text-[#0097a7] uppercase tracking-[0.2em] font-semibold">Founder &amp; Physician</span>
-                        <h2 className="text-3xl lg:text-4xl font-bold text-gray-800 mt-2">Dr. Smrity Joshi Sharma</h2>
+                        <h2 className="text-3xl lg:text-4xl font-bold text-gray-800 mt-2">Dr. Smrity Joshi</h2>
                         <p className="text-[#0097a7] font-semibold mt-1">Advanced Homeopathy Specialist</p>
                     </div>
                     <div className="w-12 h-0.5 bg-[#0097a7]" />
                     <p className="text-gray-500 leading-relaxed">
-                        Dr. Smrity Joshi Sharma is a highly experienced homeopathy practitioner with over{' '}
-                        <strong className="text-gray-800">25 years of expertise</strong>. She is known for her specialization in{' '}
+                        Dr. Smrity Joshi is a highly experienced homeopathy practitioner with over{' '}
+                        <strong className="text-gray-800">20+ years of expertise</strong>. She is known for her specialization in{' '}
                         <strong className="text-[#006978]">ADVANCED HOMEOPATHY</strong>, using modern and result-oriented
                         approaches (work on mind method) to treat the root cause of diseases. Her treatments are safe, natural,
                         and completely personalized for each patient. She consults patients worldwide through both online and
@@ -123,7 +123,7 @@ const About = () => (
                 </p>
                 <div className="w-12 h-0.5 mx-auto" style={{ backgroundColor: '#0097a7' }} />
                 <p className="text-gray-500 text-sm leading-relaxed max-w-2xl mx-auto">
-                    Dr. Smrity Joshi Sharma is committed to providing ethical, evidence-based, and individualized homeopathic care in
+                    Dr. Smrity Joshi is committed to providing ethical, evidence-based, and individualized homeopathic care in
                     accordance with the guidelines laid down by the <strong className="text-gray-700">Ministry of AYUSH, Government of India</strong>.
                 </p>
             </motion.div>
