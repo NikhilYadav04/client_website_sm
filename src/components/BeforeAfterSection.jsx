@@ -6,7 +6,8 @@ import beforeAtopic from '../assets/results/before-Actopic dermatitis.jpg'
 import afterAtopic from '../assets/results/after-Actopic dermatitis.jpg'
 import beforePsoriasis from '../assets/results/before-psoriasis pt.jpg'
 import afterPsoriasis1 from '../assets/results/after-psoriasis pt.jpg'
-import afterPsoriasis2 from '../assets/results/after-psoriasis pt 1.jpg'
+import beforePsoriasis2 from '../assets/results/psoriasis-2-A.jpg'
+import afterPsoriasis2 from '../assets/results/psoriasis-2-B.jpg'
 
 const cases = [
     {
@@ -26,7 +27,7 @@ const cases = [
     {
         id: 3,
         title: 'Psoriasis — Case 2',
-        before: beforePsoriasis,
+        before: beforePsoriasis2,
         after: afterPsoriasis2,
         desc: 'Progressive healing with personalized homeopathic plan',
     },

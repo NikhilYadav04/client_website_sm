@@ -1121,6 +1121,262 @@ export const diseasesData = {
         ],
     },
 
+    // ── 13. NEW DISEASES ─────────────────────────────────────────────────────
+
+    'bronchitis': {
+        title: 'Bronchitis', category: 'Respiratory System', bannerSubtitle: 'Respiratory System',
+        intro: 'Bronchitis is inflammation of the bronchial tubes, causing a persistent cough with mucus. Acute bronchitis is usually viral, while chronic bronchitis — a form of COPD — results from prolonged irritation. Homoeopathy reduces inflammation, clears mucus, and strengthens bronchial resilience without suppressive antibiotic overuse.',
+        symptoms: ['Persistent cough with yellow or grey mucus', 'Chest discomfort and soreness', 'Mild fever and chills (acute)', 'Shortness of breath on exertion', 'Wheezing and fatigue'],
+        causes: ['Viral infection (most common cause of acute bronchitis)', 'Cigarette smoking (chronic bronchitis)', 'Air pollution and dust exposure', 'Weakened immunity', 'Sinusitis causing post-nasal drip'],
+        homeopathy: 'Antimonium Tartaricum (rattling chest, difficulty expecting mucus), Phosphorus (tickling cough, hoarseness, sensitive patient), Hepar Sulph (productive cough, chilly patient, pus-forming tendency), Kali Bichromicum (thick ropy yellow mucus, sinus involvement), Bryonia (dry painful cough worse on movement). Selected based on mucus character, cough type, and constitutional profile.',
+        faq: [
+            { q: 'What is the difference between acute and chronic bronchitis?', a: 'Acute bronchitis lasts 1–3 weeks and is almost always viral. Chronic bronchitis is defined as a productive cough for at least 3 months per year for 2 consecutive years, caused by long-term irritation (usually cigarette smoke) and represents a form of COPD.' },
+            { q: 'Is antibiotic treatment necessary for acute bronchitis?', a: 'In most cases, no. Over 95% of acute bronchitis cases are viral, making antibiotics ineffective. Homoeopathy treats bronchitis effectively without contributing to antibiotic resistance — a significant clinical advantage particularly in this era of rising antimicrobial resistance.' },
+            { q: 'How does homoeopathy help clear bronchial mucus?', a: 'Remedies like Antimonium Tartaricum improve the cough reflex and the body\'s ability to expectorate accumulated mucus. Kali Bichromicum dissolves thick tenacious secretions. This natural expectoration — rather than suppression — leads to healthier and more complete recovery.' },
+            { q: 'Can smokers benefit from homoeopathic treatment for bronchitis?', a: 'Yes. While quitting smoking is the single most important step, homoeopathy significantly improves mucus clearance, reduces cough severity, and addresses the constitutional sensitivity of the bronchial mucosa. Constitutional treatment can also support smoking cessation efforts.' },
+            { q: 'How long does homoeopathic treatment take for bronchitis?', a: 'Acute bronchitis typically responds within 1–2 weeks with the correct remedy — often faster than untreated cases. Chronic bronchitis requires sustained constitutional treatment over 6–12 months alongside lifestyle modifications for meaningful improvement.' },
+        ],
+    },
+
+    'pneumonia': {
+        title: 'Pneumonia', category: 'Respiratory System', bannerSubtitle: 'Respiratory System',
+        intro: 'Pneumonia is infection and inflammation of the lung tissue, causing the alveoli to fill with fluid or pus. It can range from mild "walking pneumonia" to severe life-threatening illness. Homoeopathy plays a powerful supportive and curative role — particularly in mild-to-moderate cases — reducing fever, aiding expectoration, and accelerating recovery.',
+        symptoms: ['High fever with chills and sweating', 'Productive cough — often with rust-coloured or yellow sputum', 'Chest pain worsening on breathing or coughing', 'Breathlessness and rapid breathing', 'Fatigue and muscle aches'],
+        causes: ['Bacterial infection (Streptococcus pneumoniae — most common)', 'Viral infection (influenza, COVID-19)', 'Aspiration of food or liquids', 'Weakened immunity (elderly, diabetics)', 'Hospital-acquired infections'],
+        homeopathy: 'Phosphorus (early stage — right-sided, rust-coloured sputum, anxious), Bryonia (dry pleuritic pain, worse motion, dry cough), Antimonium Tartaricum (late stage with mucus accumulation, suffocation), Veratrum Viride (high fever, rapid pulse), Lycopodium (right-sided pneumonia with fan-like nostril movement). Homoeopathy is used alongside conventional treatment in moderate-severe cases.',
+        faq: [
+            { q: 'When is pneumonia serious enough to hospitalise?', a: 'Warning signs requiring hospitalisation include oxygen saturation below 92%, severe breathlessness, confusion, high fever unresponsive to treatment, rapid heart rate, and inability to maintain oral fluids. Elderly patients and immunocompromised individuals have lower thresholds for admission. Never delay emergency care for severe pneumonia.' },
+            { q: 'Can homoeopathy be used alongside antibiotics for pneumonia?', a: 'Yes. In bacterial pneumonia requiring antibiotics, homoeopathy works effectively alongside conventional therapy — accelerating recovery, reducing fever duration, improving mucus clearance, and rebuilding immunity post-illness. It should not replace antibiotics in confirmed bacterial pneumonia.' },
+            { q: 'How does homoeopathy help with the high fever of pneumonia?', a: 'Remedies like Veratrum Viride and Aconitum specifically address the intense fever and rapid pulse of early pneumonia, working with the body\'s immune response rather than suppressing it. This gentle fever regulation — rather than blanket antipyretic use — often leads to faster full recovery.' },
+            { q: 'Can pneumonia recur after homoeopathic treatment?', a: 'Constitutional treatment following recovery from pneumonia significantly strengthens the patient\'s inherent lung resilience and immune response, particularly valuable for elderly patients or those who experience recurrent lower respiratory infections.' },
+            { q: 'What is walking pneumonia and is it milder?', a: 'Walking pneumonia (usually caused by Mycoplasma pneumoniae) produces milder symptoms — dry cough, mild fever, fatigue — allowing patients to remain ambulatory. It responds very well to homoeopathic treatment alone, with remedies like Phosphorus and Ferrum Phosphoricum being particularly effective in this milder form.' },
+        ],
+    },
+
+    'indigestion': {
+        title: 'Indigestion', category: 'Digestive System', bannerSubtitle: 'Digestive System',
+        intro: 'Indigestion (dyspepsia) refers to discomfort or pain in the upper abdomen associated with eating. It is one of the most common digestive complaints, affecting millions daily. Homoeopathy corrects the underlying digestive fire imbalance — addressing individual eating habits, emotional triggers, and gastric sensitivity rather than just neutralising acid.',
+        symptoms: ['Bloating and fullness after meals', 'Burning or pain in upper abdomen', 'Belching and nausea', 'Early satiety — feeling full too quickly', 'Occasional vomiting or regurgitation'],
+        causes: ['Overeating or eating too quickly', 'Spicy, fatty, or rich foods', 'Stress and anxiety', 'Alcohol and caffeine excess', 'H. pylori infection (functional dyspepsia)', 'Medications (NSAIDs, iron tablets)'],
+        homeopathy: 'Nux Vomica (indigestion after rich food, alcohol, stress — type-A personality), Carbo Veg (bloating even after simple food, wants to be fanned), Lycopodium (bloating worse 4–8 pm, right-sided), Pulsatilla (indigestion from fatty food, weepy, mild patient), Natrum Phosphoricum (sour eructations, acid taste).',
+        faq: [
+            { q: 'What is the difference between indigestion and acid reflux?', a: 'Indigestion (dyspepsia) is upper abdominal discomfort broadly associated with eating. Acid reflux specifically involves stomach acid travelling upward into the oesophagus, causing heartburn. Many patients have both simultaneously — homoeopathy addresses the complete digestive pattern rather than splitting symptoms artificially.' },
+            { q: 'Can anxiety and stress really cause indigestion?', a: 'Yes. The gut-brain axis is very real — stress activates the sympathetic nervous system, reducing blood flow to the gut, altering gut motility, and increasing acid secretion. Homoeopathic treatment uniquely addresses both the emotional driver and its digestive manifestation simultaneously.' },
+            { q: 'How quickly does homoeopathy work for indigestion?', a: 'Acute indigestion often responds within minutes to the correct remedy — Nux Vomica after overeating, Pulsatilla after rich fatty food. Chronic recurrent indigestion requires 4–8 weeks of constitutional treatment for lasting improvement.' },
+            { q: 'What dietary habits help prevent indigestion alongside homoeopathic treatment?', a: 'Eat slowly and in smaller portions, avoid lying down within 2 hours of meals, limit spicy, fatty, and acidic foods, reduce caffeine and alcohol, and manage stress actively. These simple habits significantly amplify the benefits of homoeopathic treatment.' },
+            { q: 'Is functional dyspepsia — indigestion with normal endoscopy — treatable with homoeopathy?', a: 'Yes, very effectively. Functional dyspepsia — where no structural cause is found — is strongly linked to gut hypersensitivity and stress, both of which homoeopathy addresses constitutionally. Many patients with functional dyspepsia achieve complete resolution with individualised treatment.' },
+        ],
+    },
+
+    'gastritis': {
+        title: 'Gastritis', category: 'Digestive System', bannerSubtitle: 'Digestive System',
+        intro: 'Gastritis is inflammation of the stomach lining, causing burning pain, nausea, and indigestion. It can be acute (from infection, NSAIDs, or alcohol) or chronic (from H. pylori or autoimmune causes). Homoeopathy heals the inflamed mucosa from within, addresses the root cause, and prevents the progression to peptic ulcer disease.',
+        symptoms: ['Burning or gnawing pain in the upper abdomen', 'Nausea and vomiting', 'Loss of appetite', 'Bloating after meals', 'Dark stools (if bleeding is present)'],
+        causes: ['H. pylori bacterial infection', 'NSAIDs (aspirin, ibuprofen) overuse', 'Excessive alcohol consumption', 'Autoimmune gastritis (attacks gastric parietal cells)', 'Chronic stress', 'Bile reflux'],
+        homeopathy: 'Nux Vomica (gastritis from spicy food, alcohol, stress), Arsenicum Album (burning pain relieved by warm drinks, anxious patient), Phosphorus (burning gastritis, sympathetic personality), Kali Bichromicum (thick mucus and gastric catarrh), Bismuth (nausea, vomiting with violent gastric irritation). Detailed case-taking determines the precise constitutional remedy.',
+        faq: [
+            { q: 'What is the difference between gastritis and an ulcer?', a: 'Gastritis is surface-level inflammation of the gastric lining. An ulcer is a deeper erosion that penetrates through the protective mucosa. Gastritis can progress to ulcer formation if untreated, particularly in H. pylori-positive patients — early homoeopathic treatment prevents this progression.' },
+            { q: 'How does H. pylori cause gastritis?', a: 'H. pylori bacteria embed in the gastric mucosa, producing urease which breaks down the protective mucus layer. This exposes the stomach lining to acid damage, causing inflammation and pain. Homoeopathy strengthens the mucosal immune barrier and reduces susceptibility to H. pylori, ideally alongside eradication therapy.' },
+            { q: 'Can chronic gastritis become cancer?', a: 'Chronic atrophic gastritis — particularly autoimmune or longstanding H. pylori-related — carries an increased risk of gastric cancer over decades. Regular endoscopic monitoring is essential in these cases, alongside constitutional homoeopathic treatment to reduce ongoing mucosal inflammation.' },
+            { q: 'How quickly does homoeopathic treatment relieve gastritis pain?', a: 'Acute gastritis pain often responds significantly within 1–3 days of the correct remedy (Nux Vomica, Arsenicum Album, Phosphorus). Chronic gastritis typically shows meaningful improvement in 4–6 weeks of sustained constitutional treatment.' },
+            { q: 'What diet helps during homoeopathic treatment for gastritis?', a: 'Eat bland, soft, easily digestible foods. Avoid NSAIDs, alcohol, spicy foods, coffee, and carbonated drinks. Small, regular meals are gentler on the inflamed stomach lining. These dietary steps complement but do not replace constitutional homoeopathic treatment.' },
+        ],
+    },
+
+    'constipation': {
+        title: 'Constipation', category: 'Digestive System', bannerSubtitle: 'Digestive System',
+        intro: 'Constipation — defined as fewer than 3 bowel movements per week — is one of the most common digestive complaints worldwide. Homoeopathy corrects the underlying bowel motility, dietary habits, and emotional factors causing constipation without creating the dependency associated with laxative overuse.',
+        symptoms: ['Fewer than 3 bowel movements per week', 'Hard, dry, or lumpy stools', 'Straining during defecation', 'Sensation of incomplete evacuation', 'Abdominal bloating and discomfort'],
+        causes: ['Low-fibre diet and inadequate fluid intake', 'Sedentary lifestyle', 'Ignoring the urge to defecate', 'Medications (opioids, antacids, iron tablets)', 'Hypothyroidism and metabolic causes', 'Stress and emotional suppression', 'IBS-constipation type'],
+        homeopathy: 'Nux Vomica (constant ineffectual urge, constipation from sedentary habit and stress), Bryonia (large dry hard stools, no urge), Alumina (no urge even with soft stools), Silicea (stool recedes back when partially expelled), Lycopodium (constipation from travel or change of routine). Selected based on stool character, urge pattern, and constitutional type.',
+        faq: [
+            { q: 'Is it normal to have a bowel movement only every 2–3 days?', a: 'Normal bowel frequency ranges from 3 times a day to 3 times a week. If 2–3 days is consistent, painless, and stools are soft and complete, this may be normal for that individual. Constipation becomes a clinical concern when stools are hard, difficult to pass, or accompanied by discomfort.' },
+            { q: 'Can laxative overuse worsen constipation long-term?', a: 'Yes. Stimulant laxatives (senna, bisacodyl) used daily weaken the natural bowel nerve function over months to years, creating laxative dependency. Homoeopathy restores natural bowel tone without causing dependency — a significant clinical advantage for chronic constipation.' },
+            { q: 'Can constipation cause other health problems?', a: 'Chronic constipation increases risk of haemorrhoids, anal fissures, diverticular disease, and rectal prolapse from repeated straining. Severe cases can cause faecal impaction. Addressing constipation constitutionally prevents these complications.' },
+            { q: 'How does diet affect constipation and what should I eat?', a: 'Aim for 25–35g of dietary fibre daily from vegetables, fruits, legumes, and whole grains. Drink at least 2 litres of water daily — fibre without adequate fluid can worsen hard stools. Prunes and flaxseed have natural gentle laxative properties. These complement homoeopathic treatment.' },
+            { q: 'How quickly does homoeopathy correct constipation?', a: 'Many patients notice improvement in bowel frequency and stool consistency within 1–2 weeks of the correct constitutional remedy. Long-standing constipation from poor bowel habits or nerve dysfunction takes 4–8 weeks for sustained regularisation.' },
+        ],
+    },
+
+    'diarrhea': {
+        title: 'Diarrhea', category: 'Digestive System', bannerSubtitle: 'Digestive System',
+        intro: 'Diarrhea — defined as loose, watery stools occurring 3 or more times per day — can be acute (infection, food poisoning) or chronic (IBS, IBD, malabsorption). Homoeopathy is highly effective for both, acting rapidly in acute episodes and constitutionally correcting the susceptibility to chronic diarrhea without the side effects of antidiarrhoeals.',
+        symptoms: ['Loose or watery stools 3 or more times per day', 'Abdominal cramps and pain', 'Urgency and inability to delay defecation', 'Nausea and vomiting (in acute gastroenteritis)', 'Dehydration — thirst, dry mouth, reduced urine output'],
+        causes: ['Viral gastroenteritis (most common)', 'Bacterial infections (Salmonella, E. coli)', 'Food poisoning', 'Parasites (Giardia, Entamoeba)', 'Food intolerances (lactose, gluten)', 'IBS or IBD', 'Medications (antibiotics disrupting gut flora)'],
+        homeopathy: 'Veratrum Album (profuse watery stools with cold sweat and collapse), Arsenicum Album (burning diarrhoea, anxiety, worse at midnight), Podophyllum (gushing, offensive, painless morning diarrhoea), Aloe Socotrina (urgency and mucus in stools), Nux Vomica (diarrhoea after dietary excess alternating with constipation).',
+        faq: [
+            { q: 'When should diarrhea prompt immediate medical attention?', a: 'Seek urgent care if diarrhea contains significant blood or mucus (suggesting dysentery or IBD), if there are signs of severe dehydration (no urine for 8+ hours, confusion, sunken eyes, extreme weakness), if it persists beyond 5–7 days, or occurs in the very young or elderly.' },
+            { q: 'How can I prevent dehydration during a bout of diarrhea?', a: 'ORS (Oral Rehydration Solution) containing water, sugar, and salt replaces lost fluids and electrolytes. Coconut water and rice water are good natural alternatives. Avoid caffeine, alcohol, fizzy drinks, and dairy. Homoeopathic treatment simultaneously reduces stool frequency and the associated fluid loss.' },
+            { q: 'Can homoeopathy work quickly for acute food poisoning diarrhea?', a: 'Yes, often within hours. Arsenicum Album — for burning, anxious, restless diarrhea after food poisoning — is one of the most rapid-acting acute homoeopathic remedies. Podophyllum and Veratrum Album address different presentations just as quickly when well matched.' },
+            { q: 'Why does antibiotic use sometimes cause diarrhea?', a: 'Antibiotics kill pathogenic bacteria but also disrupt the normal gut microbiome, allowing Clostridioides difficile (C. diff) or other opportunistic organisms to overgrow, causing antibiotic-associated diarrhea. Homoeopathy used alongside antibiotics minimises this microbiome disruption.' },
+            { q: 'Is chronic diarrhea always related to infection?', a: 'No. IBS, ulcerative colitis, Crohn\'s disease, coeliac disease, microscopic colitis, and pancreatic insufficiency all cause chronic diarrhea without active infection. A thorough homoeopathic case-taking identifies the constitutional root — whether stress-driven, immune-driven, or structural — for targeted treatment.' },
+        ],
+    },
+
+    'joint-pain': {
+        title: 'Joint Pain', category: 'Musculoskeletal System', bannerSubtitle: 'Musculoskeletal System',
+        intro: 'Joint pain (arthralgia) is among the leading causes of disability worldwide. It can arise from inflammatory arthritis, degenerative wear, infection, or injury. Homoeopathy addresses joint pain at its root — reducing inflammation, improving joint fluid quality, and correcting the underlying constitutional predisposition to joint disease.',
+        symptoms: ['Pain, tenderness, and swelling in one or multiple joints', 'Morning stiffness improving with movement', 'Reduced range of motion', 'Warmth and redness over inflamed joints', 'Joint deformity in longstanding disease'],
+        causes: ['Osteoarthritis (wear and tear)', 'Rheumatoid arthritis (autoimmune)', 'Gout (uric acid crystals)', 'Psoriatic arthritis', 'Reactive arthritis following infection', 'Injury or overuse'],
+        homeopathy: 'Rhus Toxicodendron (stiffness worse on first motion, better with continued movement), Bryonia (pain worse any motion, better absolute rest), Apis Mellifica (hot swollen shiny joints, better cold applications), Calcarea Carbonica (overweight patient, cold damp aggravation), Benzoic Acid (gout with strong-smelling urine). Remedy selected after full joint pain pattern analysis.',
+        faq: [
+            { q: 'How do I know if my joint pain is inflammatory or degenerative?', a: 'Inflammatory joint pain (rheumatoid arthritis, gout) typically involves swelling, redness, warmth, and prolonged morning stiffness exceeding 1 hour. Degenerative pain (osteoarthritis) is worse after use, better with rest, and morning stiffness resolves within 30 minutes. Blood markers (ESR, CRP, rheumatoid factor) and imaging help differentiate.' },
+            { q: 'Can homoeopathy slow joint degeneration in osteoarthritis?', a: 'Homoeopathy can significantly reduce pain, improve mobility, and slow the progression of degenerative changes by reducing chronic low-grade inflammation and improving cartilage nutrition. Results are best in early-to-moderate osteoarthritis — advanced cases with bone-on-bone degeneration are managed more symptomatically.' },
+            { q: 'Does weather really affect joint pain?', a: 'Yes. Many patients experience worsening in cold, damp weather. This is not imagined — barometric pressure changes affect joint fluid pressure and membrane sensitivity. Homoeopathic remedy selection actively considers weather modalities: Rhus Tox for cold-damp worsening, Bryonia for dry heat aggravation.' },
+            { q: 'Can joint pain from gout be cured with homoeopathy?', a: 'Constitutional homoeopathic treatment — combined with dietary uric acid reduction (reducing red meat, organ meats, shellfish, and alcohol) — effectively controls gouty arthritis. Remedies like Benzoic Acid, Ledum Palustre, and Colchicum reduce uric acid levels and prevent acute attacks.' },
+            { q: 'How long before joint pain improves with homoeopathic treatment?', a: 'Acute joint pain often shows significant improvement within 1–2 weeks. Chronic inflammatory arthritis typically requires 3–6 months of consistent constitutional treatment for meaningful reduction in pain, swelling, and morning stiffness.' },
+        ],
+    },
+
+    'muscle-strain': {
+        title: 'Muscle Strain', category: 'Musculoskeletal System', bannerSubtitle: 'Musculoskeletal System',
+        intro: 'A muscle strain (pulled muscle) occurs when muscle fibres are overstretched or torn by sudden force or overuse. Homoeopathy provides rapid relief for acute strains and supports faster tissue healing without anti-inflammatory drug side effects.',
+        symptoms: ['Sudden pain during or after physical activity', 'Muscle tenderness on palpation', 'Swelling and bruising (in severe strains)', 'Muscle weakness and reduced range of motion', 'Muscle spasms or cramps'],
+        causes: ['Sudden uncontrolled movement or lifting', 'Sports and athletic overexertion', 'Poor warm-up before exercise', 'Muscle fatigue and dehydration', 'Inadequate muscle conditioning'],
+        homeopathy: 'Arnica Montana (the premier homoeopathic first-aid for injury — bruising, soreness, trauma), Rhus Toxicodendron (strain from overexertion, stiff and better on continued movement), Ruta Graveolens (injuries to fibrous tissue — tendons and ligaments, persistent soreness), Bellis Perennis (deep muscle trauma, sore bruised feeling deeper than Arnica). Selected based on type of injury and symptom pattern.',
+        faq: [
+            { q: 'What is the difference between a muscle strain and a muscle sprain?', a: 'A muscle strain involves tearing of muscle fibres or the muscle-tendon unit. A sprain involves stretching or tearing of ligaments around a joint. Both benefit from homoeopathic treatment — Arnica and Rhus Tox for strains, Bryonia and Ruta for ligament sprains with joint involvement.' },
+            { q: 'Should I apply ice or heat to a muscle strain?', a: 'Ice (wrapped in cloth) is recommended in the first 24–48 hours to reduce acute swelling and inflammation. After 48 hours, gentle heat improves circulation and healing. Rhus Toxicodendron in homoeopathy corresponds to the stiffness that improves with warmth — making it ideal in the sub-acute phase.' },
+            { q: 'Can homoeopathy speed up healing after a muscle injury?', a: 'Yes. Arnica Montana taken immediately after injury reduces bruising, swelling, and soreness significantly. Clinical experience and several clinical trials show Arnica reduces post-injury recovery time compared to placebo, allowing return to activity faster.' },
+            { q: 'When should a muscle strain be seen by a doctor urgently?', a: 'Seek urgent evaluation if there is a sudden "pop" sound at the time of injury (suggesting complete rupture), severe swelling preventing movement, visible deformity, or numbness and tingling in the affected limb — these signs may indicate a complete tear or associated nerve injury.' },
+            { q: 'Can homoeopathy help with exercise-related muscle soreness?', a: 'Yes. Arnica and Rhus Toxicodendron both help delayed onset muscle soreness (DOMS) following intense exercise. Taking Arnica before and after intense training sessions is a well-known sports homoeopathy application that reduces next-day soreness.' },
+        ],
+    },
+
+    'fungal-infections': {
+        title: 'Fungal Infections', category: 'Skin & Dermatology', bannerSubtitle: 'Skin & Dermatology',
+        intro: 'Fungal infections affect skin, nails, and mucous membranes — ranging from ringworm and athlete\'s foot to oral and vaginal candidiasis. They thrive in warm, moist environments and in individuals with weakened immunity. Homoeopathy treats both the local infection and the underlying constitutional susceptibility that makes the patient repeatedly prone to fungal overgrowth.',
+        symptoms: ['Ring-shaped, red, scaly itchy patches on skin (ringworm)', 'Itching and burning between toes (athlete\'s foot)', 'Thickened, discoloured, brittle nails (onychomycosis)', 'White patches in mouth or throat (oral thrush)', 'Vaginal discharge and itching (Candida)'],
+        causes: ['Dermatophyte fungi (ringworm, athlete\'s foot)', 'Candida species (oral and genital thrush)', 'Malassezia (tinea versicolor, dandruff)', 'Humid environment and poor hygiene', 'Antibiotic use disrupting normal flora', 'Diabetes and immunosuppression'],
+        homeopathy: 'Tellurium (ringworm-like lesions, offensive discharges), Sepia (ringworm in isolated spots, indifferent patient), Graphites (thick honey-like discharge in skin folds), Sulphur (itching, burning fungal skin conditions worse from heat), Kreosotum (Candida infections with acrid offensive discharge). Constitutional treatment combined with anti-fungal hygiene measures.',
+        faq: [
+            { q: 'Why do some people get recurrent fungal infections despite treatment?', a: 'Recurrence happens when local anti-fungal treatment eliminates the surface infection without addressing the underlying terrain — immune status, gut microbiome balance, blood sugar control, and hormonal factors. Homoeopathy strengthens the internal terrain, making recurrence far less likely.' },
+            { q: 'Can nail fungal infections (onychomycosis) be treated homoeopathically?', a: 'Yes. Nail fungal infections are notoriously slow-growing and difficult to eradicate — conventional antifungals require 3–6 months with liver toxicity risks. Homoeopathy treats nail fungus effectively with remedies like Graphites and Antimonium Crudum, requiring patience (6–12 months for full nail regrowth) but without organ toxicity.' },
+            { q: 'Does diet affect susceptibility to fungal infections?', a: 'Yes. High sugar intake feeds Candida and other fungi. A low-sugar, low-refined-carbohydrate diet significantly reduces fungal proliferation. Probiotics help restore competing normal bacteria. These dietary changes powerfully complement constitutional homoeopathic treatment.' },
+            { q: 'Can fungal infections spread to other family members?', a: 'Dermatophyte infections (ringworm, athlete\'s foot) are moderately contagious and can spread through direct contact or shared towels, socks, and floors. Candida is not generally contagious between healthy individuals. Good hygiene practices prevent spread while homoeopathic treatment addresses the individual\'s susceptibility.' },
+            { q: 'Is homoeopathy safe alongside anti-fungal creams for skin fungal infections?', a: 'Absolutely. Topical anti-fungal creams can be used simultaneously with homoeopathic constitutional treatment. Homoeopathy works from within to reduce susceptibility and recurrence, while topical applications treat the active surface lesion. Together they give faster and more durable results.' },
+        ],
+    },
+
+    'headache': {
+        title: 'Headache', category: 'Neurological / Nervous System', bannerSubtitle: 'Neurological / Nervous System',
+        intro: 'Headache is one of the most common neurological complaints, with over 150 classified types. Tension-type and migraine headaches account for the vast majority of cases. Homoeopathy offers targeted treatment based on the precise character, location, and triggers of each patient\'s headache — without the rebound headaches caused by painkiller overuse.',
+        symptoms: ['Pressure or dull aching pain around the head (tension-type)', 'Throbbing or pulsating pain (vascular/migraine)', 'Pain behind the eyes', 'Sensitivity to light, sound, or smell', 'Nausea associated with severe headache'],
+        causes: ['Muscle tension from stress and poor posture', 'Dehydration', 'Eye strain and screen overuse', 'Hormonal fluctuations', 'Sinus congestion', 'Dietary triggers (caffeine, alcohol, aged cheese)', 'Sleep disturbances'],
+        homeopathy: 'Belladonna (sudden violent throbbing headache, worse light, red face), Natrum Muriaticum (headache from sun exposure, grief, hammering pain), Gelsemium (dull heavy headache with weakness, exam nerves), Bryonia (splitting headache worse on any movement), Spigelia (left-sided stitching headache around the eye). Remedy selection based on precise pain character, location, and triggers.',
+        faq: [
+            { q: 'What is the difference between a tension headache and a migraine?', a: 'A tension headache feels like a tight band around the head, is bilateral, non-throbbing, mild-to-moderate, and is not worsened by routine activity. A migraine is typically one-sided, pulsating, moderate-to-severe, worsened by activity, and accompanied by nausea and sensitivity to light and sound. Both respond well to individualised homoeopathic treatment.' },
+            { q: 'What is medication overuse headache and how does homoeopathy help?', a: 'Medication overuse headache (MOH) or rebound headache occurs when painkillers are used more than 10–15 days per month. This creates an escalating cycle. Homoeopathy provides effective pain relief without the rebound risk, making it ideal for breaking the MOH cycle under medical guidance.' },
+            { q: 'Can homoeopathy treat chronic daily headache?', a: 'Yes. Constitutional homoeopathic treatment is particularly effective for chronic daily headache — including transformed migraine and chronic tension-type headache. Treatment over 3–6 months progressively reduces headache frequency and intensity, in many cases achieving complete remission.' },
+            { q: 'When should a new or severe headache be evaluated urgently?', a: 'The "thunderclap headache" — sudden severe headache reaching maximum intensity within seconds — requires immediate emergency evaluation (it may indicate subarachnoid haemorrhage). Also seek evaluation for new severe headache with fever, stiff neck, confusion, neurological symptoms, or headache after head trauma.' },
+            { q: 'Can screen time and posture cause headaches and what helps?', a: 'Digital eye strain and forward head posture create significant neck muscle tension and referred headache. Taking regular screen breaks (20-20-20 rule), ensuring correct monitor height, and strengthening neck and shoulder muscles all complement homoeopathic treatment.' },
+        ],
+    },
+
+    'palpitations': {
+        title: 'Palpitations', category: 'Cardiovascular System', bannerSubtitle: 'Cardiovascular System',
+        intro: 'Palpitations — the awareness of one\'s own heartbeat as racing, pounding, or irregular — are a common complaint with a wide spectrum of causes from benign anxiety to cardiac arrhythmias. Homoeopathy effectively addresses both functional palpitations driven by stress and anxiety, and supports the constitutional management of underlying cardiac predispositions.',
+        symptoms: ['Awareness of rapid, pounding, or irregular heartbeat', 'Fluttering sensation in the chest', 'Shortness of breath during episodes', 'Dizziness or lightheadedness', 'Anxiety intensifying the episode'],
+        causes: ['Anxiety, panic, and stress', 'Caffeine and stimulant use', 'Thyroid disorders (especially hyperthyroidism)', 'Cardiac arrhythmias (atrial fibrillation)', 'Anaemia', 'Hormonal changes (menopause, pregnancy)', 'Dehydration and electrolyte imbalance'],
+        homeopathy: 'Digitalis (palpitations at even the slightest motion, slow irregular pulse), Natrum Muriaticum (palpitations from suppressed grief and emotion), Spigelia (violent palpitations visible through clothing, left-sided), Lachesis (palpitations worse on constriction, waking from sleep), Arsenicum Album (anxious, restless palpitations, worse at midnight). Cardiac evaluation must precede homoeopathic treatment for any significant arrhythmia.',
+        faq: [
+            { q: 'Are palpitations always a sign of heart disease?', a: 'No. The vast majority of palpitations — especially in young healthy people — are benign and driven by anxiety, caffeine excess, stress, or thyroid imbalance. However, palpitations with fainting, chest pain, breathlessness, or structural heart disease history warrant full cardiological evaluation including ECG before assuming they are benign.' },
+            { q: 'How can I recognise if palpitations are medically serious?', a: 'Red flags include palpitations associated with fainting (syncope), chest pain or pressure, severe breathlessness, family history of sudden cardiac death, or palpitations at rest in someone over 50. These require urgent ECG and cardiology review, not just reassurance.' },
+            { q: 'Can anxiety alone cause palpitations?', a: 'Absolutely. Anxiety activates the sympathetic nervous system, increasing heart rate and the sensitivity to perceive every heartbeat. This creates a self-reinforcing cycle where anxious awareness of the heart makes palpitations worse. Homoeopathic remedies like Argentum Nitricum and Arsenicum Album address both the anxiety and the palpitation pattern simultaneously.' },
+            { q: 'Can homoeopathy reduce palpitations from hyperthyroidism?', a: 'Yes. As constitutional homoeopathic treatment progressively calms thyroid overactivity (through remedies like Lycopus Virginicus and Phosphorus), associated palpitations reduce accordingly. Thyroid function must be monitored regularly and conventional anti-thyroid therapy should continue under physician guidance.' },
+            { q: 'Can caffeine withdrawal also cause palpitations?', a: 'Yes. Both excess caffeine and abrupt caffeine withdrawal can trigger palpitations. If you experience palpitations during caffeine reduction, taper intake very gradually (reducing by one beverage every 3–5 days) rather than stopping abruptly. Most withdrawal-related palpitations resolve within 1–2 weeks.' },
+        ],
+    },
+
+    'heart-disease': {
+        title: 'Heart Disease', category: 'Cardiovascular System', bannerSubtitle: 'Cardiovascular System',
+        intro: 'Cardiovascular disease (CVD) is the leading cause of death globally. Homoeopathy serves as a powerful complementary therapy — reducing cardiovascular risk factors, supporting cardiac function, improving quality of life, and managing non-emergency symptoms — always alongside conventional cardiology care and monitoring.',
+        symptoms: ['Chest pain or pressure (angina)', 'Shortness of breath on exertion', 'Fatigue and reduced exercise tolerance', 'Palpitations and irregular heartbeat', 'Ankle swelling (heart failure)', 'Dizziness or fainting'],
+        causes: ['Atherosclerosis (coronary artery disease)', 'Hypertension', 'Diabetes mellitus', 'Smoking and obesity', 'Physical inactivity and poor diet', 'Genetic predisposition', 'Previous heart attack or valve disease'],
+        homeopathy: 'Crataegus Oxyacantha (the premier cardiac tonic — weakened heart, arteriosclerosis, angina-like pain), Lachesis (left-sided heart symptoms, worse lying on left side), Aurum Metallicum (hypertension, cardiac disease in perfectionist personality), Digitalis (slow irregular pulse, valvular disease), Strophanthus (heart failure, dyspnoea). Used adjunctively alongside cardiology treatment — never as a standalone for acute or severe cardiac conditions.',
+        faq: [
+            { q: 'Can homoeopathy replace heart medication or stents?', a: 'No. Established coronary artery disease, heart failure, or arrhythmias require evidence-based cardiology care — medications (statins, beta-blockers, ACE inhibitors), interventions (angioplasty, stenting), and monitoring. Homoeopathy serves as complementary support for symptoms, risk factor management, and quality of life — never as a replacement for established cardiac care.' },
+            { q: 'What is Crataegus and why is it used for the heart in homoeopathy?', a: 'Crataegus Oxyacantha (hawthorn) has both homoeopathic and herbal evidence for cardiac support — improving coronary blood flow, reducing peripheral vascular resistance, and strengthening myocardial contractility. It is use adjunctively in mild cardiac weakness, early heart failure, and as a preventive cardiac tonic.' },
+            { q: 'Can homoeopathy help reduce heart disease risk factors?', a: 'Yes. Constitutional treatment addressing hypertension (Rauwolfia, Natrum Mur), high cholesterol (Cholesterinum, Allium Sativum), obesity (Calcarea Carb, Phytolacca), diabetes, and smoking-related susceptibility significantly reduces the cumulative cardiovascular risk burden over time.' },
+            { q: 'How does stress increase heart disease risk?', a: 'Chronic stress elevates cortisol and adrenaline, raising blood pressure, promoting platelet aggregation, increasing LDL oxidation, and causing endothelial inflammation — all direct contributors to atherosclerosis and cardiac events. Homoeopathy\'s mind-level constitutional treatment is uniquely positioned to address stress at its emotional root.' },
+            { q: 'Is homoeopathic treatment safe alongside heart medications like warfarin or beta-blockers?', a: 'Yes. Homoeopathic remedies — given in ultra-dilute potencies — do not interact pharmacologically with warfarin, beta-blockers, statins, or other cardiac medications. Always inform your cardiologist of all treatments being taken, and never adjust cardiac medication doses independently.' },
+        ],
+    },
+
+    'behavioral-disorders': {
+        title: 'Behavioral Disorders', category: 'Mental / Emotional Health', bannerSubtitle: 'Mental / Emotional Health',
+        intro: 'Behavioural disorders in children and adolescents — including Oppositional Defiant Disorder (ODD), Conduct Disorder, and related conditions — involve persistent patterns of problematic behaviour significantly impairing daily functioning. Homoeopathy offers a safe, individualised, and side-effect-free approach to improving emotional regulation, impulse control, and social behaviour.',
+        symptoms: ['Persistent defiance and refusal to follow rules', 'Aggression, irritability, and emotional outbursts', 'Difficulty regulating emotions', 'Poor peer relationships', 'Lying, stealing, or destructive behaviour (conduct disorder)', 'School performance difficulties'],
+        causes: ['Genetic predisposition and neurodevelopmental factors', 'Difficult temperament', 'Adverse childhood experiences (trauma, abuse, neglect)', 'Parenting style and family conflict', 'Learning disabilities (undiagnosed ADHD, dyslexia)', 'Social and environmental stressors'],
+        homeopathy: 'Stramonium (wild, violent, fearful tantrums, history of fright or trauma), Tuberculinum (restless, destructive, constantly seeking change, travels well), Natrum Muriaticum (suppressed grief or emotional trauma driving behavioural problems), Lycopodium (bully behaviour masking deep insecurity), Chamomilla (extreme irritability and conflict in younger children). Careful developmental and family history is essential.',
+        faq: [
+            { q: 'What is the difference between ODD and normal defiance in children?', a: 'Normal defiance is developmentally expected — particularly around ages 2–3 and in adolescence — and is proportionate, occasional, and manageable. ODD is characterised by persistent defiance (lasting 6+ months), occurring in multiple settings, causing significant impairment, and beyond what would be expected for the child\'s developmental stage.' },
+            { q: 'Can trauma cause behavioural disorders in children?', a: 'Yes. Adverse childhood experiences (ACEs) including abuse, neglect, domestic violence, or sudden loss are among the strongest predictors of behavioural disorders. Trauma-sensitive homoeopathic remedies like Natrum Muriaticum, Staphysagria, and Stramonium directly address the emotional wound driving the behaviour.' },
+            { q: 'Is homoeopathy safe for children with behavioural disorders alongside therapy?', a: 'Yes. Homoeopathy complements behavioural therapy (CBT, parent management training), school support, and psychoeducation excellently — addressing the constitutional emotional imbalance driving behaviour while therapy builds skills. Parents typically notice improved receptiveness to therapy once homoeopathic treatment takes effect.' },
+            { q: 'How long does homoeopathic treatment take for behavioural disorders?', a: 'Meaningful improvement in emotional regulation and outburst frequency is typically seen within 4–8 weeks of the correct constitutional remedy. Sustained behavioural change over multiple settings develops over 3–6 months of treatment, requiring patient follow-up and dose adjustment.' },
+            { q: 'Can dietary changes help children with behavioural disorders?', a: 'Yes. Reducing artificial additives, food dyes (tartrazine, Red 40), preservatives, and high-sugar foods shows measurable reduction in irritability and hyperactivity in susceptible children. Increasing omega-3 fatty acids supports brain development. These nutritional changes potentiate constitutional homoeopathic treatment.' },
+        ],
+    },
+
+    'bacterial-infections': {
+        title: 'Bacterial Infections', category: 'Infections', bannerSubtitle: 'Infections',
+        intro: 'Bacterial infections — ranging from skin infections and tonsillitis to urinary tract infections and pneumonia — are caused by pathogenic bacteria and typically require targeted treatment. Homoeopathy plays a valuable supportive and curative role in mild and moderate bacterial infections, reducing severity, aiding recovery, and minimising antibiotic use while strengthening the body\'s innate immune defences.',
+        symptoms: ['Localised warmth, redness, swelling, and pain (skin infections)', 'Fever with chills', 'Pus or purulent discharge at infection site', 'Fatigue and malaise', 'Swollen lymph nodes near the infection'],
+        causes: ['Streptococcal species (throat, skin, chest)', 'Staphylococcus aureus (skin, wound infections)', 'E. coli (urinary tract, gut)', 'Salmonella and Campylobacter (food poisoning)', 'H. pylori (gastric)', 'Poor immunity and nutritional deficiencies'],
+        homeopathy: 'Hepar Sulph (pus-forming infections, highly sensitive to pain and cold — "the homoeopathic antibiotic"), Silicea (chronic suppurating infections, promotes drainage and healing), Belladonna (acute hot red infection with high fever, rapid onset), Mercurius Solubilis (bacterial infections with profuse offensive discharge, night sweating), Pyrogen (septic states, high fever with rapid pulse). Severe bacterial infections require conventional antibiotic therapy — homoeopathy supports recovery.',
+        faq: [
+            { q: 'When is antibiotic use essential and when can homoeopathy manage alone?', a: 'Antibiotics are essential for serious bacterial infections — sepsis, bacterial meningitis, severe pneumonia, deep tissue infections, and urinary infections in high-risk patients. Homoeopathy can effectively manage mild bacterial infections (minor skin infections, early tonsillitis, uncomplicated UTI in healthy adults) while reducing antibiotic overuse and resistance risk.' },
+            { q: 'Can homoeopathy prevent recurrent bacterial infections?', a: 'Yes. Constitutional homoeopathic treatment addresses the underlying immune weakness that makes a patient susceptible to repeated bacterial infections — whether that is chronic tonsillitis, recurrent UTIs, or repeated skin infections. Strengthening the host rather than repeatedly targeting the bacteria is the key homoeopathic strategy.' },
+            { q: 'What is Hepar Sulph and why is it called the homoeopathic antibiotic?', a: 'Hepar Sulphuricum Calcareum (Calcium Sulphide) has a specific affinity for pus-forming infections in highly sensitive, chilly patients. It either promotes full suppuration and drainage or — in higher potency — aborts the suppurative process entirely. Its action on staphylococcal skin and throat infections explains this informal title.' },
+            { q: 'What are the risks of antibiotic overuse for recurrent bacterial infections?', a: 'Antibiotic overuse risks include disruption of the gut microbiome (reducing immune training), Clostridioides difficile colitis, development of antibiotic-resistant organisms, and increasing the patient\'s chronic illness burden. Homoeopathic constitutional treatment between antibiotic courses helps restore immune resilience and microbiome balance.' },
+            { q: 'Can homoeopathy help during antibiotic treatment for bacterial infections?', a: 'Yes. Taking constitutional homoeopathic remedies alongside antibiotics reduces treatment duration in some cases, minimises antibiotic side effects (gut upset, yeast overgrowth), and accelerates recovery. There are no known interactions between homoeopathic remedies and antibiotics.' },
+        ],
+    },
+
+    'teething-problems': {
+        title: 'Teething Problems', category: 'Pediatrics / Common in Children', bannerSubtitle: 'Pediatrics / Common in Children',
+        intro: 'Teething — the eruption of the primary teeth — typically begins around 6 months and continues throughout the second year. It causes significant discomfort, drooling, and irritability in many infants. Homoeopathy offers gentle and highly effective relief for teething distress, making it the safest and most natural first choice for this universal infant experience.',
+        symptoms: ['Excessive drooling', 'Irritability and crying', 'Biting and chewing on objects', 'Swollen, red, tender gums', 'Disturbed sleep and night crying', 'Mild low-grade fever and diarrhoea in some'],
+        causes: ['Normal physiological process of primary tooth eruption', 'Pressure and inflammation as teeth push through the gum membrane', 'Heightened pain sensitivity in some infants', 'Associated increased salivary gland activity'],
+        homeopathy: 'Chamomilla (THE premier teething remedy — extreme irritability, one cheek red, only consoled when carried, screaming with pain), Calcarea Carbonica (slow teething in chubby sweaty child), Phytolacca (biting firmly on teeth or gums during teething), Pulsatilla (tearful, clingy, wants to be carried and consoled), Kreosotum (late difficult teething with foul breath and diarrhoea).',
+        faq: [
+            { q: 'At what age do babies start and finish teething?', a: 'Primary teeth typically begin erupting at 6 months (lower central incisors first) and the full set of 20 primary teeth is usually complete by age 2.5–3 years. There is significant individual variation — some babies teethe with minimal distress from 4 months, others not until 12 months. Both are within the normal range.' },
+            { q: 'Does teething cause fever and diarrhoea?', a: 'Mild low-grade temperature and slightly loose stools are commonly associated with teething due to increased gum inflammation and saliva swallowing. However, true high fever (above 38.5°C) and significant diarrhoea should not be attributed to teething — these warrant medical evaluation for infection.' },
+            { q: 'Is Chamomilla really effective for teething pain?', a: 'Chamomilla is one of the most frequently prescribed and clinically validated homoeopathic remedies for teething. It is specifically indicated when the infant is inconsolably irritable, screaming with pain, wanting constant carrying, and shows one red cheek — its action for this specific pattern is remarkable.' },
+            { q: 'Are teething gels and teething rings safe?', a: 'Many conventional teething gels contain benzocaine (which can cause methaemoglobinaemia in infants) and are no longer recommended. Chilled (not frozen) teething rings provide safe pressure relief. Homoeopathic teething granules are among the safest remedies available and are widely used globally.' },
+            { q: 'Can homoeopathy help a baby sleep better during teething?', a: 'Yes. Chamomilla specifically addresses the nocturnal irritability and disturbed sleep of teething — often restoring sleep within 30–60 minutes of the correct dose. Parents consistently report this as one of the most dramatic and appreciated acute homoeopathic responses in infant care.' },
+        ],
+    },
+
+    'chickenpox': {
+        title: 'Chickenpox', category: 'Pediatrics / Common in Children', bannerSubtitle: 'Pediatrics / Common in Children',
+        intro: 'Chickenpox (Varicella) is a highly contagious viral infection characterised by an itchy blister-like rash appearing across the body. Homoeopathy significantly reduces the intensity of the rash, relieves itching, shortens illness duration, and supports full recovery without the complications of antiviral overuse.',
+        symptoms: ['Itchy red spots progressing to fluid-filled blisters', 'Blisters appearing in successive crops across the body', 'Low-grade fever and general malaise before and during the rash', 'Headache and fatigue', 'Blisters crusting over within 3–5 days of eruption'],
+        causes: ['Varicella-zoster virus (VZV) — highly contagious', 'Spread by respiratory droplets and direct contact with blisters', 'Incubation period 10–21 days after exposure', 'Most common in school-age children, but can affect adults with more severity'],
+        homeopathy: 'Rhus Toxicodendron (intensely itchy vesicular eruption, restlessness, better with warmth — the key chickenpox remedy), Antimonium Crudum (thick crusted eruptions with digestive symptoms), Pulsatilla (mild weepy child, secondary infections of vesicles), Arsenicum Album (burning blisters better warm compresses, anxious child), Apis Mellifica (when there is marked swelling and burning). Treatment reduces itch, fever duration, and secondary skin infection risk.',
+        faq: [
+            { q: 'Is chickenpox dangerous and when should a doctor be consulted?', a: 'Chickenpox is usually mild in healthy children. Seek urgent medical attention for: blisters becoming very red, warm, and swollen (bacterial superinfection); blisters near or in the eyes; high persistent fever; significant breathing difficulty; confusion or severe headache; or chickenpox in newborns, immunocompromised individuals, or adults (where it is considerably more severe).' },
+            { q: 'How does homoeopathy help reduce chickenpox itching?', a: 'Rhus Toxicodendron — whose proving produces an intensely itchy vesicular rash — acts on a deeply similar principle to chickenpox. When prescribed in potency, it reliably reduces the itch intensity and duration, allowing the child to rest rather than scratch incessantly — which significantly reduces the risk of secondary bacterial infection and scarring.' },
+            { q: 'Can scratching chickenpox blisters cause permanent scars?', a: 'Yes. Scratching breaks skin integrity, introducing bacteria and causing secondary infection (impetigo) which leads to deeper scarring. Keeping nails short, wearing cotton mittens at night in young children, and homoeopathic treatment to reduce itch intensity are the most effective strategies to prevent scarring.' },
+            { q: 'Can a person get chickenpox twice?', a: 'Rarely. Natural chickenpox infection provides long-lasting immunity in most people. However, the virus remains dormant in nerve ganglia and can reactivate decades later as shingles (Herpes Zoster) — particularly when immunity is reduced by age, stress, or illness. Homoeopathy supports long-term immune resilience post-chickenpox.' },
+            { q: 'What are safe home care measures alongside homoeopathy for chickenpox?', a: 'Trim nails and keep them clean, use loose cotton clothing to reduce skin irritation, apply calamine lotion to soothe itching, take lukewarm (not hot) baths with colloidal oatmeal, ensure good hydration, and avoid aspirin (risk of Reye\'s syndrome). These measures significantly complement homoeopathic treatment.' },
+        ],
+    },
+
+    'diaper-rash': {
+        title: 'Diaper Rash', category: 'Pediatrics / Common in Children', bannerSubtitle: 'Pediatrics / Common in Children',
+        intro: 'Diaper rash (nappy rash) is a common inflammatory skin condition affecting infants and toddlers in the diaper area. It results from prolonged contact with urine and stool, friction, and sometimes Candida overgrowth. Homoeopathy heals the skin gently from within, addresses the constitutional sensitivity, and reduces recurrence — making it ideal for the most delicate infant skin.',
+        symptoms: ['Red, tender, inflamed skin in the nappy area', 'Skin rash extending to thighs and abdomen', 'Crying and discomfort during nappy changes', 'Satellite lesions (in Candida rash)', 'Broken or peeling skin in severe cases'],
+        causes: ['Prolonged contact with wet or soiled nappies', 'Friction from nappy rubbing', 'Candida yeast overgrowth (especially after antibiotic use)', 'Sensitive skin and allergic reactions to nappy brands or wipes', 'Introduction of new foods changing stool character', 'Diarrhoea increasing stool frequency and irritation'],
+        homeopathy: 'Sulphur (red, burning, inflamed skin worse from heat and bathing), Calendula (promotes skin healing — used topically and internally), Graphites (moist, oozing diaper rash in folds), Medorrhinum (recurrent diaper rash in constitutionally susceptible infants), Chamomilla (diaper rash during teething with irritable, inconsolable infant). Gentle and completely safe for newborns.',
+        faq: [
+            { q: 'How do I know if diaper rash is Candida (fungal) or simple irritant rash?', a: 'Candida diaper rash has distinct features: bright red colour with sharp borders, satellite lesions (small spots around the main rash), involvement of skin folds (unlike simple irritant rash which spares folds), and it does not improve with standard barrier creams alone. Candida rash often follows antibiotic treatment.' },
+            { q: 'What nappy care prevents diaper rash from occurring?', a: 'Change nappies promptly (within 10–15 minutes of soiling), clean the area gently with soft cotton and warm water, allow nappy-free time daily (let skin breathe), use a barrier cream (zinc oxide or calendula cream) at each change, and choose breathable nappy brands appropriate for sensitive skin.' },
+            { q: 'Can homoeopathy treat diaper rash safely in newborns?', a: 'Yes. Homoeopathic remedies are among the safest treatments available for newborns — with no chemical absorption risks. Remedies like Calendula, Sulphur, and Graphites in appropriate low potencies are widely used for nappy rash with excellent safety and clinical results.' },
+            { q: 'Does teething make diaper rash worse?', a: 'Yes. Many parents and homoeopaths observe a strong association between teething and diaper rash — thought to be related to increased stool acidity from excess saliva swallowing during teething. Treating the teething simultaneously (Chamomilla) often resolves the associated nappy rash without separate local treatment.' },
+            { q: 'How quickly does homoeopathic treatment work for diaper rash?', a: 'Mild diaper rash responds within 24–48 hours of the correct remedy combined with good nappy hygiene. More inflamed or Candida-complicated rash typically clears within 3–5 days. Constitutional treatment addresses the chronic recurrence pattern over 4–6 weeks.' },
+        ],
+    },
 
 }
 
@@ -1137,126 +1393,159 @@ import catHair from '../assets/disease/hair.jpg'
 import catSkeletal from '../assets/disease/skeletal.jpg'
 import catGenito from '../assets/disease/genito.jpg'
 import catChronic from '../assets/disease/chronic.jpg'
+import catCardio from '../assets/disease/cardiovasculur.jpg'
+import catInfections from '../assets/disease/infections.jpg'
 
 export const diseaseCategories = [
     {
-        name: 'Respiratory Diseases', emoji: '🫁', img: catRespiratory, diseases: [
+        name: 'Respiratory System', emoji: '🫁', img: catRespiratory,
+        perspective: 'Focus on upper/lower respiratory tract; acute vs chronic; inflammation & infection patterns',
+        diseases: [
             { label: 'Cold & Flu', slug: 'cold-flu' },
-            { label: 'Chronic Cough', slug: 'chronic-cough' },
-            { label: 'Bronchial Asthma', slug: 'bronchial-asthma' },
+            { label: 'Cough', slug: 'chronic-cough' },
+            { label: 'Bronchitis', slug: 'bronchitis' },
+            { label: 'Asthma', slug: 'bronchial-asthma' },
+            { label: 'Pneumonia', slug: 'pneumonia' },
             { label: 'Allergic Rhinitis', slug: 'allergic-rhinitis' },
             { label: 'Sinusitis', slug: 'sinusitis' },
-            { label: 'Adenoids', slug: 'adenoids' },
         ]
     },
     {
-        name: 'Gastrointestinal Diseases', emoji: '🍽️', img: catGastro, diseases: [
+        name: 'Digestive System', emoji: '🍽️', img: catGastro,
+        perspective: 'Group by organs involved (stomach, intestines, liver); functional vs structural disorders',
+        diseases: [
+            { label: 'Indigestion', slug: 'indigestion' },
+            { label: 'Gastritis', slug: 'gastritis' },
+            { label: 'Constipation', slug: 'constipation' },
+            { label: 'Diarrhea', slug: 'diarrhea' },
+            { label: 'IBS', slug: 'ibs' },
             { label: 'Piles (Haemorrhoids)', slug: 'piles' },
             { label: 'Acidity & Gas', slug: 'acidity-gas' },
             { label: 'Ulcers', slug: 'ulcers' },
-            { label: 'Fissure & Fistula', slug: 'fissure-fistula' },
-            { label: 'Irritable Bowel Syndrome', slug: 'ibs' },
             { label: 'Ulcerative Colitis', slug: 'ulcerative-colitis' },
         ]
     },
     {
-        name: 'Hormonal & Lifestyle Disorders', emoji: '⚖️', img: catHormonal, diseases: [
-            { label: 'Diabetes', slug: 'diabetes' },
-            { label: 'Hypertension', slug: 'hypertension' },
-            { label: 'Hypothyroidism', slug: 'hypothyroidism' },
-            { label: 'Hyperthyroidism', slug: 'hyperthyroidism' },
-            { label: 'Obesity', slug: 'obesity' },
-            { label: 'High Cholesterol', slug: 'high-cholesterol' },
+        name: 'Musculoskeletal System', emoji: '🦴', img: catSkeletal,
+        perspective: 'Focus on tissue type (joints, muscles, bones); chronic vs acute inflammation',
+        diseases: [
+            { label: 'Arthritis', slug: 'rheumatoid-arthritis' },
+            { label: 'Joint Pain', slug: 'joint-pain' },
+            { label: 'Back Pain', slug: 'back-pain' },
+            { label: 'Muscle Strain', slug: 'muscle-strain' },
+            { label: 'Cervical Spondylosis', slug: 'cervical-spondylosis' },
+            { label: 'Sciatica', slug: 'sciatica' },
+            { label: 'Gout', slug: 'gout' },
+            { label: 'Frozen Shoulder', slug: 'frozen-shoulder' },
         ]
     },
     {
-        name: 'Female Reproductive Diseases', emoji: '👩', img: catFemale, diseases: [
-            { label: 'PCOS / PCOD', slug: 'pcos-pcod' },
-            { label: 'Endometriosis', slug: 'endometriosis' },
-            { label: 'Leucorrhoea', slug: 'leucorrhoea' },
-            { label: 'Menopause', slug: 'menopause' },
-            { label: 'Uterine Fibroids', slug: 'uterine-fibroids' },
-            { label: 'Irregular Menstruation', slug: 'irregular-menstruation' },
-        ]
-    },
-    {
-        name: 'Pediatric Diseases', emoji: '🧒', img: catPediatric, diseases: [
-            { label: 'Recurrent Cold & Cough', slug: 'recurrent-cold-cough' },
-            { label: 'Adenoids & Tonsillitis', slug: 'adenoids-tonsillitis' },
-            { label: 'Bedwetting', slug: 'bedwetting' },
-            { label: 'Childhood Asthma', slug: 'childhood-asthma' },
-            { label: 'ADHD', slug: 'adhd' },
-            { label: 'Growth Delays', slug: 'growth-delays' },
-        ]
-    },
-    {
-        name: 'Mental Health', emoji: '🧠', img: catMental, diseases: [
-            { label: 'Anxiety Disorders', slug: 'anxiety' },
-            { label: 'Depression', slug: 'depression' },
-            { label: 'Insomnia', slug: 'insomnia' },
-            { label: 'OCD', slug: 'ocd' },
-            { label: 'Stress & Burnout', slug: 'stress-burnout' },
-            { label: 'Panic Attacks', slug: 'panic-attacks' },
-        ]
-    },
-    {
-        name: 'Neurological Disorders', emoji: '🧬', img: catNeuro, diseases: [
-            { label: 'Migraine', slug: 'migraine' },
-            { label: 'Epilepsy', slug: 'epilepsy' },
-            { label: "Bell's Palsy", slug: 'bells-palsy' },
-            { label: "Parkinson's Disease", slug: 'parkinsons' },
-            { label: 'Vertigo', slug: 'vertigo' },
-            { label: 'Numbness & Nerve Pain', slug: 'nerve-pain' },
-        ]
-    },
-    {
-        name: 'Skin Diseases', emoji: '🌿', img: catSkin, diseases: [
-            { label: 'Acne', slug: 'acne' },
+        name: 'Skin & Dermatology', emoji: '🌿', img: catSkin,
+        perspective: 'Based on lesion type (rash, pustules, scaling) and etiology (allergic, infectious, autoimmune)',
+        diseases: [
             { label: 'Eczema', slug: 'eczema' },
+            { label: 'Acne', slug: 'acne' },
             { label: 'Psoriasis', slug: 'psoriasis' },
+            { label: 'Fungal Infections', slug: 'fungal-infections' },
             { label: 'Vitiligo', slug: 'vitiligo' },
             { label: 'Urticaria', slug: 'urticaria' },
             { label: 'Lichen Planus', slug: 'lichen-planus' },
         ]
     },
     {
-        name: 'Hair Disorders', emoji: '💇', img: catHair, diseases: [
-            { label: 'Alopecia Areata', slug: 'alopecia-areata' },
-            { label: 'Male Pattern Baldness', slug: 'male-pattern-baldness' },
-            { label: 'Dandruff', slug: 'dandruff' },
-            { label: 'Premature Greying', slug: 'premature-greying' },
-            { label: 'Hair Thinning', slug: 'hair-thinning' },
-            { label: 'Scalp Psoriasis', slug: 'scalp-psoriasis' },
+        name: 'Neurological / Nervous System', emoji: '🧬', img: catNeuro,
+        perspective: 'Classified as central vs peripheral nervous system',
+        diseases: [
+            { label: 'Headache', slug: 'headache' },
+            { label: 'Migraine', slug: 'migraine' },
+            { label: 'Anxiety', slug: 'anxiety' },
+            { label: 'Insomnia', slug: 'insomnia' },
+            { label: 'Neuralgia', slug: 'nerve-pain' },
+            { label: 'Epilepsy', slug: 'epilepsy' },
+            { label: "Bell's Palsy", slug: 'bells-palsy' },
+            { label: 'Vertigo', slug: 'vertigo' },
         ]
     },
     {
-        name: 'Musculoskeletal Disorders', emoji: '🦴', img: catSkeletal, diseases: [
-            { label: 'Rheumatoid Arthritis', slug: 'rheumatoid-arthritis' },
-            { label: 'Back Pain', slug: 'back-pain' },
-            { label: 'Cervical Spondylosis', slug: 'cervical-spondylosis' },
-            { label: 'Sciatica', slug: 'sciatica' },
-            { label: 'Frozen Shoulder', slug: 'frozen-shoulder' },
-            { label: 'Gout', slug: 'gout' },
+        name: 'Cardiovascular System', emoji: '❤️', img: catCardio,
+        perspective: 'Includes functional (palpitations, hypertension) and structural (coronary artery disease) conditions',
+        diseases: [
+            { label: 'Palpitations', slug: 'palpitations' },
+            { label: 'Heart Disease', slug: 'heart-disease' },
+            { label: 'Hypertension', slug: 'hypertension' },
+            { label: 'High Cholesterol', slug: 'high-cholesterol' },
         ]
     },
     {
-        name: 'Genito-Urinary Diseases', emoji: '🚽', img: catGenito, diseases: [
-            { label: 'Urinary Tract Infection', slug: 'uti' },
+        name: 'Hormonal & Metabolic', emoji: '⚖️', img: catHormonal,
+        perspective: 'Grouped by endocrine gland or metabolic pathway; often chronic and systemic',
+        diseases: [
+            { label: 'Diabetes', slug: 'diabetes' },
+            { label: 'Hypothyroidism', slug: 'hypothyroidism' },
+            { label: 'Hyperthyroidism', slug: 'hyperthyroidism' },
+            { label: 'Obesity', slug: 'obesity' },
+            { label: 'PCOS / PCOD', slug: 'pcos-pcod' },
+        ]
+    },
+    {
+        name: 'Female Reproductive', emoji: '👩', img: catFemale,
+        perspective: 'Based on hormonal cycle, anatomy, and reproductive stage of life',
+        diseases: [
+            { label: 'Menstrual Disorders', slug: 'irregular-menstruation' },
+            { label: 'Endometriosis', slug: 'endometriosis' },
+            { label: 'Leucorrhoea', slug: 'leucorrhoea' },
+            { label: 'Menopause', slug: 'menopause' },
+            { label: 'Uterine Fibroids', slug: 'uterine-fibroids' },
+        ]
+    },
+    {
+        name: 'Genito-Urinary System', emoji: '💧', img: catGenito,
+        perspective: 'Classified by organ involvement (kidney, bladder, prostate) and recurrence',
+        diseases: [
+            { label: 'UTI', slug: 'uti' },
             { label: 'Kidney Stones', slug: 'kidney-stones' },
-            { label: 'Bedwetting', slug: 'bedwetting-adult' },
-            { label: 'Prostate Issues', slug: 'prostate' },
+            { label: 'Prostate Problems', slug: 'prostate' },
             { label: 'Recurrent UTI', slug: 'recurrent-uti' },
             { label: 'Interstitial Cystitis', slug: 'interstitial-cystitis' },
         ]
     },
     {
-        name: 'Acute & Chronic Diseases', emoji: '🌍', img: catChronic, diseases: [
-            { label: 'Fever & Infections', slug: 'fever-infections' },
+        name: 'Mental / Emotional Health', emoji: '🧠', img: catMental,
+        perspective: 'Classified by emotional domain — anxiety spectrum, mood disorders, behavioural patterns',
+        diseases: [
+            { label: 'Anxiety', slug: 'anxiety' },
+            { label: 'Depression', slug: 'depression' },
+            { label: 'Stress & Burnout', slug: 'stress-burnout' },
+            { label: 'Insomnia', slug: 'insomnia' },
+            { label: 'OCD', slug: 'ocd' },
+            { label: 'Panic Attacks', slug: 'panic-attacks' },
+            { label: 'Behavioral Disorders', slug: 'behavioral-disorders' },
+        ]
+    },
+    {
+        name: 'Infections', emoji: '🦠', img: catInfections,
+        perspective: 'Grouped by pathogen type (viral, bacterial, fungal) and system affected',
+        diseases: [
+            { label: 'Bacterial Infections', slug: 'bacterial-infections' },
+            { label: 'Viral Fever', slug: 'fever-infections' },
             { label: 'Allergies', slug: 'allergies' },
             { label: 'Autoimmune Conditions', slug: 'autoimmune' },
-            { label: 'Post-viral Fatigue', slug: 'post-viral-fatigue' },
-            { label: 'Chronic Pain', slug: 'chronic-pain' },
             { label: 'Recurrent Infections', slug: 'recurrent-infections' },
+            { label: 'Post-Viral Fatigue', slug: 'post-viral-fatigue' },
+        ]
+    },
+    {
+        name: 'Pediatrics / Common in Children', emoji: '🧒', img: catPediatric,
+        perspective: 'Based on age of onset and pediatric susceptibility patterns',
+        diseases: [
+            { label: 'Teething Problems', slug: 'teething-problems' },
+            { label: 'Chickenpox', slug: 'chickenpox' },
+            { label: 'Diaper Rash', slug: 'diaper-rash' },
+            { label: 'Recurrent Cold & Cough', slug: 'recurrent-cold-cough' },
+            { label: 'Adenoids & Tonsillitis', slug: 'adenoids-tonsillitis' },
+            { label: 'Bedwetting', slug: 'bedwetting' },
+            { label: 'ADHD', slug: 'adhd' },
+            { label: 'Growth Delays', slug: 'growth-delays' },
         ]
     },
 ]

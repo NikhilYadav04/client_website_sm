@@ -8,9 +8,11 @@ const diseaseEmoji = {
     // Respiratory
     'cold-flu': '🤧', 'chronic-cough': '😮‍💨', 'bronchial-asthma': '🫁',
     'allergic-rhinitis': '👃', 'sinusitis': '🌬️', 'adenoids': '💊',
+    'bronchitis': '🌫️', 'pneumonia': '🫁',
     // Gastrointestinal
     'piles': '🩸', 'acidity-gas': '🔥', 'ulcers': '🫀',
     'fissure-fistula': '⚡', 'ibs': '🌿', 'ulcerative-colitis': '🔬',
+    'indigestion': '🍽️', 'gastritis': '🔥', 'constipation': '🪨', 'diarrhea': '💧',
     // Hormonal
     'diabetes': '💉', 'hypertension': '❤️', 'hypothyroidism': '🦋',
     'hyperthyroidism': '⚡', 'obesity': '⚖️', 'high-cholesterol': '🫀',
@@ -20,27 +22,35 @@ const diseaseEmoji = {
     // Pediatric
     'recurrent-cold-cough': '👶', 'adenoids-tonsillitis': '🍬', 'bedwetting': '🌙',
     'childhood-asthma': '🫁', 'adhd': '🧠', 'growth-delays': '📏',
+    'teething-problems': '🦷', 'chickenpox': '🔴', 'diaper-rash': '👶',
     // Mental Health
     'anxiety': '😰', 'depression': '🌧️', 'insomnia': '😴',
     'ocd': '♾️', 'stress-burnout': '🔥', 'panic-attacks': '💨',
+    'behavioral-disorders': '🧩',
     // Neurological
     'migraine': '🤕', 'epilepsy': '⚡', 'bells-palsy': '😶',
     'parkinsons': '🤲', 'vertigo': '🌀', 'nerve-pain': '⚡',
+    'headache': '😖',
+    // Cardiovascular
+    'palpitations': '💓', 'heart-disease': '❤️‍🔥',
     // Skin
     'acne': '🌋', 'eczema': '🌿', 'psoriasis': '🦎',
     'vitiligo': '🎭', 'urticaria': '🐝', 'lichen-planus': '🟣',
+    'fungal-infections': '🍄',
     // Hair
     'alopecia-areata': '💇', 'male-pattern-baldness': '👨‍🦲', 'dandruff': '❄️',
     'premature-greying': '🩶', 'hair-thinning': '🍂', 'scalp-psoriasis': '🔬',
     // Musculoskeletal
     'rheumatoid-arthritis': '🦴', 'back-pain': '🧍', 'cervical-spondylosis': '🔩',
     'sciatica': '⚡', 'frozen-shoulder': '🥶', 'gout': '🦶',
+    'joint-pain': '🦵', 'muscle-strain': '💪',
     // Genito-Urinary
     'uti': '💧', 'kidney-stones': '🪨', 'bedwetting-adult': '🌙',
     'prostate': '🔵', 'recurrent-uti': '🔄', 'interstitial-cystitis': '💧',
-    // Acute & Chronic
+    // Acute & Chronic / Infections
     'fever-infections': '🌡️', 'allergies': '🌼', 'autoimmune': '🛡️',
     'post-viral-fatigue': '😴', 'chronic-pain': '💊', 'recurrent-infections': '🦠',
+    'bacterial-infections': '🦠',
 }
 
 // ── Per-category color config ──────────────────────────────────────────────
@@ -60,7 +70,7 @@ const catColors = [
 ]
 
 // Show only these 3 specific categories on the home page
-const FEATURED_NAMES = ['Respiratory Diseases', 'Gastrointestinal Diseases', 'Hormonal & Lifestyle Disorders']
+const FEATURED_NAMES = ['Respiratory System', 'Digestive System', 'Musculoskeletal System']
 
 const TreatmentGrid = () => {
     const featured = diseaseCategories.filter(c => FEATURED_NAMES.includes(c.name))
