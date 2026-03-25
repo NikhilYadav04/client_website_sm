@@ -5,8 +5,24 @@ import ConsultationModal from './ConsultationModal'
 
 const WHATSAPP_NUMBER = '919321953605'
 
+const clinics = [
+    {
+        name: 'Lupin Diagnostics',
+        label: 'DIAGNOSTIC CENTRE',
+        address: 'Health Nexa, Shop No.2, Ground Floor Prasad Sco., Opp. Kapil Kiran, Chafekar Marg, Mulund (E), Mumbai – 400081',
+        phones: ['9341100600', '9321953605'],
+    },
+    {
+        name: 'Health Nexa Clinic',
+        label: 'MAIN CLINIC',
+        address: 'Health Nexa, Shop 1, Francis Misquitta Chawl, Near Kalpataru Bldg., Kanjur Marg East, Mumbai – 400042',
+        phones: ['9892739945', '9321953605'],
+    },
+]
+
 const ContactSection = () => {
     const [modalOpen, setModalOpen] = useState(false)
+    const [activeMap, setActiveMap] = useState(1)
     return (
         <>
             <ConsultationModal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
@@ -25,89 +41,76 @@ const ContactSection = () => {
                         <div>
                             <span className="text-[#b2ebf2] text-xs uppercase tracking-widest font-semibold">Find Us</span>
                             <h2 className="text-3xl font-bold text-white mt-2 leading-tight">
-                                Visit Our Clinic
+                                Visit Our Clinics
                             </h2>
                             <p className="text-white/60 mt-2 text-sm leading-relaxed">
                                 Walk-in or book ahead. Advanced Homeopathy consultations also available online worldwide.
                             </p>
                         </div>
 
+                        {/* Two clinic address blocks */}
                         <div className="space-y-5">
-                            {/* Address */}
-                            <div className="flex items-start gap-4">
-                                <div className="bg-white/10 p-2.5 rounded-lg shrink-0">
-                                    <MapPin size={18} className="text-[#b2ebf2]" />
+                            {clinics.map((clinic, i) => (
+                                <div key={i} className="flex items-start gap-4">
+                                    <div className="bg-white/10 p-2.5 rounded-lg shrink-0 mt-0.5">
+                                        <MapPin size={18} className="text-[#b2ebf2]" />
+                                    </div>
+                                    <div>
+                                        <p className="text-[#80deea] text-[10px] uppercase tracking-widest font-bold mb-0.5">{clinic.label}</p>
+                                        <p className="text-white text-sm font-semibold mb-0.5">{clinic.name}</p>
+                                        <p className="text-white/70 text-sm leading-relaxed mb-1">{clinic.address}</p>
+                                        <div className="flex flex-wrap gap-x-3 gap-y-0.5">
+                                            {clinic.phones.map(ph => (
+                                                <a key={ph} href={`tel:+91${ph}`} className="text-[#b2ebf2] text-xs font-semibold hover:text-white transition-colors">
+                                                    📞 {ph}
+                                                </a>
+                                            ))}
+                                        </div>
+                                    </div>
                                 </div>
-                                <div>
-                                    <p className="text-xs text-white/40 uppercase tracking-wider mb-1">Clinic Address</p>
-                                    <p className="text-white text-sm leading-relaxed">
-                                        Nishant Dental Polyclinic,<br />
-                                        Opposite Ankur Hospital, Shop No. 7,<br />
-                                        Kanjurmarg East, Mumbai – 400042<br />
-                                        Maharashtra, India
-                                    </p>
-                                </div>
-                            </div>
+                            ))}
+                        </div>
 
-                            {/* Phone */}
-                            <div className="flex items-center gap-4">
-                                <div className="bg-white/10 p-2.5 rounded-lg shrink-0">
-                                    <Phone size={18} className="text-[#b2ebf2]" />
+                        {/* Timings */}
+                        <div className="flex items-start gap-4">
+                            <div className="bg-white/10 p-2.5 rounded-lg shrink-0">
+                                <Clock size={18} className="text-[#b2ebf2]" />
+                            </div>
+                            <div className="space-y-2">
+                                <p className="text-xs text-white/40 uppercase tracking-wider mb-1">Consultation Timings</p>
+                                <div>
+                                    <p className="text-[#b2ebf2] text-xs font-semibold uppercase tracking-wide">🇮🇳 Indian Patients (IST)</p>
+                                    <p className="text-white text-sm">Morning: 10:00 AM – 12:00 PM</p>
+                                    <p className="text-white text-sm">Evening: 05:30 PM – 08:00 PM</p>
                                 </div>
                                 <div>
-                                    <p className="text-xs text-white/40 uppercase tracking-wider mb-1">Phone &amp; WhatsApp</p>
-                                    <a
-                                        href="tel:+919321953605"
-                                        className="text-white text-sm hover:text-[#b2ebf2] transition-colors font-semibold"
+                                    <p className="text-[#b2ebf2] text-xs font-semibold uppercase tracking-wide">🌍 International Patients</p>
+                                    <p className="text-white/70 text-sm">Available via Zoom / Google Meet / WhatsApp</p>
+                                    <button
+                                        onClick={() => {
+                                            const el = document.getElementById('international')
+                                            if (el) {
+                                                el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+                                            } else {
+                                                window.location.href = '/#international'
+                                            }
+                                        }}
+                                        className="text-[#80deea] text-xs font-semibold underline underline-offset-2 hover:text-white transition-colors text-left"
                                     >
-                                        +91 93219 53605
-                                    </a>
-                                    <p className="text-white/50 text-xs mt-0.5">Available for Call &amp; WhatsApp</p>
+                                        View timezone slots ↓
+                                    </button>
                                 </div>
                             </div>
+                        </div>
 
-                            {/* Timings */}
-                            <div className="flex items-start gap-4">
-                                <div className="bg-white/10 p-2.5 rounded-lg shrink-0">
-                                    <Clock size={18} className="text-[#b2ebf2]" />
-                                </div>
-                                <div className="space-y-2">
-                                    <p className="text-xs text-white/40 uppercase tracking-wider mb-1">Consultation Timings</p>
-                                    <div>
-                                        <p className="text-[#b2ebf2] text-xs font-semibold uppercase tracking-wide">🇮🇳 Indian Patients (IST)</p>
-                                        <p className="text-white text-sm">Morning: 10:00 AM – 12:00 PM</p>
-                                        <p className="text-white text-sm">Evening: 05:30 PM – 08:00 PM</p>
-                                    </div>
-                                    <div>
-                                        <p className="text-[#b2ebf2] text-xs font-semibold uppercase tracking-wide">🌍 International Patients</p>
-                                        <p className="text-white/70 text-sm">Available via Zoom / Google Meet / WhatsApp</p>
-                                        <button
-                                            onClick={() => {
-                                                const el = document.getElementById('international')
-                                                if (el) {
-                                                    el.scrollIntoView({ behavior: 'smooth', block: 'start' })
-                                                } else {
-                                                    // On /contact page, navigate to home and scroll
-                                                    window.location.href = '/#international'
-                                                }
-                                            }}
-                                            className="text-[#80deea] text-xs font-semibold underline underline-offset-2 hover:text-white transition-colors text-left"
-                                        >
-                                            View timezone slots ↓
-                                        </button>
-                                    </div>
-                                </div>
+                        {/* Online mention */}
+                        <div className="flex items-center gap-4">
+                            <div className="bg-white/10 p-2.5 rounded-lg shrink-0">
+                                <Globe size={18} className="text-[#b2ebf2]" />
                             </div>
-
-                            {/* Online mention */}
-                            <div className="flex items-center gap-4">
-                                <div className="bg-white/10 p-2.5 rounded-lg shrink-0">
-                                    <Globe size={18} className="text-[#b2ebf2]" />
-                                </div>
-                                <div>
-                                    <p className="text-xs text-white/40 uppercase tracking-wider mb-1">Online Consultation</p>
-                                    <p className="text-white text-sm">Zoom · Google Meet · WhatsApp · Phone Call</p>
-                                </div>
+                            <div>
+                                <p className="text-xs text-white/40 uppercase tracking-wider mb-1">Online Consultation</p>
+                                <p className="text-white text-sm">Zoom · Google Meet · WhatsApp · Phone Call</p>
                             </div>
                         </div>
 
@@ -131,19 +134,51 @@ const ContactSection = () => {
                         </div>
                     </motion.div>
 
-                    {/* Right: Google Map — Kanjurmarg East, Mumbai */}
-                    <div className="bg-[#f5f9fa] flex items-center justify-center p-6 lg:p-8 min-h-[380px]">
-                        <div className="w-full h-full min-h-[340px] rounded-2xl overflow-hidden shadow-lg border border-[#e0f7fa]">
-                            <iframe
-                                src="https://maps.google.com/maps?q=Nishant+Dental+Polyclinic+Kanjurmarg+East+Mumbai&z=16&output=embed"
-                                width="100%"
-                                height="100%"
-                                style={{ border: 0, minHeight: '340px', display: 'block' }}
-                                allowFullScreen=""
-                                loading="lazy"
-                                referrerPolicy="no-referrer-when-downgrade"
-                                title="Clinic Location - Kanjurmarg East, Mumbai"
-                            />
+                    {/* Right: Switchable Google Maps */}
+                    <div className="bg-[#f5f9fa] flex flex-col p-6 lg:p-8 min-h-[380px]">
+                        {/* Tab switcher */}
+                        <div className="flex gap-2 mb-4">
+                            {[
+                                { label: '🏥 Lupin Diagnostics · Mulund', key: 0 },
+                                { label: '🏥 Clinic · Kanjur Marg', key: 1 },
+                            ].map(tab => (
+                                <button
+                                    key={tab.key}
+                                    onClick={() => setActiveMap(tab.key)}
+                                    className="flex-1 text-xs font-semibold px-3 py-2 rounded-full transition-all duration-200"
+                                    style={
+                                        activeMap === tab.key
+                                            ? { background: '#0097a7', color: '#fff', boxShadow: '0 4px 12px rgba(0,151,167,0.3)' }
+                                            : { background: '#e0f7fa', color: '#006978', border: '1px solid #b2ebf2' }
+                                    }
+                                >
+                                    {tab.label}
+                                </button>
+                            ))}
+                        </div>
+                        {/* Map */}
+                        <div className="flex-1 min-h-[300px] rounded-2xl overflow-hidden shadow-lg border border-[#e0f7fa]">
+                            {activeMap === 0 ? (
+                                <iframe
+                                    key="map-mulund"
+                                    src="https://maps.google.com/maps?q=Chafekar+Marg+Mulund+East+Mumbai&z=16&output=embed"
+                                    width="100%" height="100%"
+                                    style={{ border: 0, minHeight: '300px', display: 'block' }}
+                                    allowFullScreen="" loading="lazy"
+                                    referrerPolicy="no-referrer-when-downgrade"
+                                    title="Lupin Diagnostics - Mulund East, Mumbai"
+                                />
+                            ) : (
+                                <iframe
+                                    key="map-kanjur"
+                                    src="https://maps.google.com/maps?q=Health+Nexa+Kanjur+Marg+East+Mumbai&z=16&output=embed"
+                                    width="100%" height="100%"
+                                    style={{ border: 0, minHeight: '300px', display: 'block' }}
+                                    allowFullScreen="" loading="lazy"
+                                    referrerPolicy="no-referrer-when-downgrade"
+                                    title="Health Nexa Clinic - Kanjur Marg East, Mumbai"
+                                />
+                            )}
                         </div>
                     </div>
                 </div>

@@ -46,13 +46,27 @@ const Footer = () => (
             {/* Col 3: Contact */}
             <div className="space-y-4">
                 <h4 className="text-white font-bold text-sm uppercase tracking-wider mb-4">Contact</h4>
+                {/* Lupin Diagnostics */}
                 <div className="flex items-start gap-3 text-sm text-white/70">
                     <MapPin size={15} className="text-[#b2ebf2] shrink-0 mt-0.5" />
-                    <span>Kanjurmarg (East),<br />Mumbai – 400042, Maharashtra</span>
+                    <div>
+                        <p className="text-[#80deea] text-[10px] uppercase tracking-widest font-bold mb-0.5">Lupin Diagnostics · Mulund</p>
+                        <span>Health Nexa, Shop No.2, Chafekar Marg, Mulund (E), Mumbai – 400081</span>
+                        <div className="mt-0.5">
+                            <a href="tel:+919341100600" className="hover:text-white transition-colors block">📞 9341100600 / 9321953605</a>
+                        </div>
+                    </div>
                 </div>
-                <div className="flex items-center gap-3 text-sm text-white/70">
-                    <Phone size={15} className="text-[#b2ebf2] shrink-0" />
-                    <a href="tel:+919321953605" className="hover:text-white transition-colors">+91 93219 53605</a>
+                {/* Main Clinic */}
+                <div className="flex items-start gap-3 text-sm text-white/70">
+                    <MapPin size={15} className="text-[#b2ebf2] shrink-0 mt-0.5" />
+                    <div>
+                        <p className="text-[#80deea] text-[10px] uppercase tracking-widest font-bold mb-0.5">Main Clinic · Kanjur Marg</p>
+                        <span>Health Nexa, Shop 1, Near Kalpataru Bldg., Kanjur Marg East, Mumbai – 400042</span>
+                        <div className="mt-0.5">
+                            <a href="tel:+919892739945" className="hover:text-white transition-colors block">📞 9892739945 / 9321953605</a>
+                        </div>
+                    </div>
                 </div>
                 <div className="flex items-center gap-3 text-sm text-white/70">
                     <Mail size={15} className="text-[#b2ebf2] shrink-0" />
