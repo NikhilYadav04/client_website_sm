@@ -78,7 +78,7 @@ const Hero = () => {
                 <button
                     onClick={prev}
                     aria-label="Previous slide"
-                    className="absolute left-4 sm:left-8 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full flex items-center justify-center transition-all duration-200"
+                    className="hidden sm:flex absolute left-4 sm:left-8 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full items-center justify-center transition-all duration-200"
                     style={{ background: 'rgba(255,255,255,0.18)', backdropFilter: 'blur(6px)', border: '1px solid rgba(255,255,255,0.3)' }}
                     onMouseEnter={e => e.currentTarget.style.background = 'rgba(255,255,255,0.32)'}
                     onMouseLeave={e => e.currentTarget.style.background = 'rgba(255,255,255,0.18)'}
@@ -90,7 +90,7 @@ const Hero = () => {
                 <button
                     onClick={next}
                     aria-label="Next slide"
-                    className="absolute right-4 sm:right-8 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full flex items-center justify-center transition-all duration-200"
+                    className="hidden sm:flex absolute right-4 sm:right-8 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full items-center justify-center transition-all duration-200"
                     style={{ background: 'rgba(255,255,255,0.18)', backdropFilter: 'blur(6px)', border: '1px solid rgba(255,255,255,0.3)' }}
                     onMouseEnter={e => e.currentTarget.style.background = 'rgba(255,255,255,0.32)'}
                     onMouseLeave={e => e.currentTarget.style.background = 'rgba(255,255,255,0.18)'}

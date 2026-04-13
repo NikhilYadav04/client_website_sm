@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { NavLink, Link, useLocation } from 'react-router-dom'
 import { Menu, X, Phone, ChevronDown, ChevronRight } from 'lucide-react'
+import logo from '../assets/logo2.png'
 import ConsultationModal from './ConsultationModal'
 import { diseaseCategories, homeopathyNavItems } from '../data/diseasesData'
 
@@ -45,9 +46,9 @@ const Navbar = () => {
             <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm border-b border-gray-200">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
 
-                    {/* Logo — text only */}
+                    {/* Logo */}
                     <NavLink to="/" className="shrink-0 select-none">
-                        <span className="text-2xl font-black tracking-tight" style={{ color: '#006978' }}>Dr. Smrity Joshi</span>
+                        <img src={logo} alt="Dr. Smrity Joshi" className="h-14 w-auto object-contain" />
                     </NavLink>
 
                     {/* Desktop Nav */}

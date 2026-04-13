@@ -23,7 +23,7 @@ const About = () => (
         {/* Hero Banner */}
         <div className="py-16 px-4 text-center mb-20 relative overflow-hidden"
             style={{ background: 'linear-gradient(135deg, #004d5a 0%, #0097a7 100%)' }}>
-            <div className="absolute text-white/5 text-[15rem] font-serif select-none pointer-events-none right-0 top-0 leading-none">🌿</div>
+            <div className="hidden sm:block absolute text-white/5 text-[15rem] font-serif select-none pointer-events-none right-0 top-0 leading-none">🌿</div>
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
                 <span className="text-xs text-[#b2ebf2] uppercase tracking-[0.25em] font-semibold">Our Story</span>
                 <h1 className="text-4xl lg:text-5xl font-bold text-white mt-3">About Dr. Smrity Joshi</h1>
