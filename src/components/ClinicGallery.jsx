@@ -6,13 +6,19 @@ import clinic2 from '../assets/clinic/clinic2.jpeg'
 import clinic3 from '../assets/clinic/clinic3.jpeg'
 import clinicDoc1 from '../assets/clinic/clinic-doc1.jpeg'
 import clinicDoc2 from '../assets/clinic/clinic-doc2.jpeg'
+import clinicKanjur from '../assets/clinic/clinic_kanjur.jpeg'
+import clinicKanjur1 from '../assets/clinic/clinic_kanjur1.jpeg'
+import clinicKanjur2 from '../assets/clinic/clinic_kanjur2.jpeg'
 
 const images = [
+    { src: clinic3, title: 'Reception & Entrance' },
+    { src: clinicKanjur1, title: 'Kanjur Marg Clinic' },
     { src: clinic1, title: 'Clinic Interior' },
     { src: clinic2, title: 'Consultation Room' },
-    { src: clinic3, title: 'Reception & Entrance' },
     { src: clinicDoc1, title: 'Doctor at Clinic' },
     { src: clinicDoc2, title: 'Patient Consultation' },
+    { src: clinicKanjur, title: 'Kanjur Marg Clinic — Exterior' },
+    { src: clinicKanjur2, title: 'Interior — Kanjur Clinic' },
 ]
 
 const ClinicGallery = () => {

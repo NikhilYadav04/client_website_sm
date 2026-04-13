@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Youtube } from 'lucide-react'
-import logo from '../assets/logo.jpg'
+import logo from '../assets/logo_name.png'
 
 const Footer = () => (
     <footer style={{ backgroundColor: '#006978' }} className="text-white font-sans">
