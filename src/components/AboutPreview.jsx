@@ -2,7 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { useNavigate } from 'react-router-dom'
 import { Globe, CheckCircle } from 'lucide-react'
-import doctorImg from '../assets/doctor/4.jpeg'
+import doctorImg from '../assets/doctor/4.png'
 
 const stats = [
     { value: '20+', label: 'Years Experience' },
