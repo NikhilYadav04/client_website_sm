@@ -12,6 +12,7 @@ const stats = [
 
 const credentials = [
     'BHMS Qualified',
+    'MCDH – Master Course in Advance Homoeopathy',
     'Specialist in ADVANCED HOMEOPATHY',
     '20+ Years of Clinical Experience',
     '10,000+ Patients Treated',
